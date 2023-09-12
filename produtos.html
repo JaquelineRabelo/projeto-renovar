@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos</title>
+  <link rel="stylesheet" href="../ecommerce amanda/css/styles.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="linha0">
+
+
+
+    <a href="#"><i class="fab fa-facebook"></i></a>
+
+    <a href="https://www.instagram.com/larissachamarelli/"> <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#"> <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+
+  </div>
+  </div>
+
+  <header> <!-- Início Cabeçalho-->
+
+    <div class="logo">
+      <a href="index.html"><img src="imagens/logo.png" alt="logo"></a>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light"><!-- Inicio Barra de Navegação-->
+      <div class="container"> <!--Inicio container-->
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-principal"> <!--Inicio collapse-->
+          <ul class="navbar-nav sm-center"> <!-- Inicio ul menu Navegação-->
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a href="produtos.html" class="nav-link" target="_blank">Produtos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+
+              <div class="dropdown-menu">
+                <a href="tratamento-corporal.html" class="dropdown-item">Tratamento Corporal</a>
+                <a href="facial.html" class="dropdown-item">Facial</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="contatos.html" class="nav-link" target="_blank">Contatos</a>
+            </li>
+          </ul> <!-- Fim ul menu Navegação-->
+        </div> <!--Fim collapse-->
+      </div> <!--Fim container-->
+    </nav> <!-- Fim Barra de Navegação-->
+  </header> <!--Fim Cabeçalho-->
+
+
+  <main id="vendas"> <!--Vendas-->
+
+    <!-- Carrinho de compras -->
+
+
+    <ul class="listagem-venda">
+      <li class="cartao-venda">
+        <div class="informacoes">
+          <a href="#"><span>AFINE - Drena Plus</span>
+        </div></a>
+        <a href="drena-plus.html" target="_blank"><img class="img-vendas"
+            src="../ecommerce amanda/imagens/br-11134201-22110-da3rqq4vpikvf9.jpeg" alt="afine"></a>
+        <ul class="valores">
+          <li class="preco"><strong>R$99,99</strong></li>
+        </ul>
+
+        <p class="descricao">DrenaPlus, Potencializador de Emagrecimento e Controle de Peso.
+        </p>
+        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
+      </li>
+
+      <li class="cartao-venda">
+        <div class="informacoes">
+          <span>Produto 2</span>
+        </div>
+
+        <img src="#" alt="afine">
+        <ul class="valores">
+          <li class="preco">R$50</li>
+        </ul>
+
+        <p class="descricao">Produto ideal para o seu emagrecimento</p>
+        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
+      </li>
+
+      <li class="cartao-venda">
+        <div class="informacoes">
+          <span>Produto 3</span>
+        </div>
+
+        <img src="#" alt="afine">
+        <ul class="valores">
+          <li class="preco">R$50</li>
+        </ul>
+
+        <p class="descricao">Produto ideal para o seu emagrecimento</p>
+        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
+      </li>
+
+      <li class="cartao-venda">
+        <div class="informacoes">
+          <span>Produto 4</span>
+        </div>
+
+        <img src="#" alt="afine">
+        <ul class="valores">
+          <li class="preco">R$50</li>
+
+        </ul>
+
+        <p class="descricao">Produto ideal para o seu emagrecimento</p>
+        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
+      </li>
+
+      <li class="cartao-venda">
+        <div class="informacoes">
+          <span>Produto 5</span>
+        </div>
+
+        <img src="#" alt="afine">
+        <ul class="valores">
+          <li class="preco">R$50</li>
+
+        </ul>
+
+        <p class="descricao">Produto ideal para o seu emagrecimento</p>
+        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
+      </li>
+
+
+      <li class="cartao-venda">
+        <div class="informacoes">
+          <span>Produto 6</span>
+        </div>
+
+        <img src="#" alt="afine">
+        <ul class="valores">
+          <li class="preco">R$50</li>
+        </ul>
+
+        <p class="descricao">Produto ideal para o seu emagrecimento</p>
+        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
+      </li>
+
+      <li class="cartao-venda">
+        <div class="informacoes">
+          <span>Produto 7</span>
+        </div>
+
+        <img src="#" alt="afine">
+        <ul class="valores">
+          <li class="preco">R$50</li>
+        </ul>
+
+        <p class="descricao">Produto ideal para o seu emagrecimento
+        </p>
+        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
+      </li>
+
+      <li class="cartao-venda">
+        <div class="informacoes">
+          <span>Produto 8</span>
+        </div>
+
+        <img src="#" alt="afine">
+        <ul class="valores">
+          <li class="preco">R$50</li>
+        </ul>
+
+        <p class="descricao">Produto ideal para o seu emagrecimento
+        </p>
+        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
+      </li>
+
+      <li class="cartao-venda">
+        <div class="informacoes">
+          <span>Produto 9</span>
+        </div>
+
+        <img src="#" alt="afine">
+        <ul class="valores">
+          <li class="preco">R$50</li>
+        </ul>
+
+        <p class="descricao">Produto ideal para o seu emagrecimento
+        </p>
+        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
+      </li>
+
+      <li class="cartao-venda">
+        <div class="informacoes">
+          <span>Produto 10</span>
+        </div>
+
+        <img src="#" alt="afine">
+        <ul class="valores">
+          <li class="preco">R$50</li>
+        </ul>
+
+        <p class="descricao">Produto ideal para o seu emagrecimento
+        </p>
+        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
+      </li>
+
+    </ul>
+
+
+
+
+  </main>
+
+
+
+  <footer>
+
+
+
+    <p>&copy; 2023 Todos os direitos reservados</p>
+
+
+
+  </footer>
+
+
+
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+  <script src="../ecommerce amanda/js/script.js"> </script>
+
+</body>
+
+</html>

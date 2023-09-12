@@ -1,0 +1,471 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*Configução Logo*/
+
+.linha0 {
+    background-color: #643D44;
+    opacity: 10;
+    height: 25px;
+    width: 100%;
+}
+
+.linha0 a {
+
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.911);
+    justify-content: space-between;
+    margin: 14px 2px 2px 14px;
+}
+
+header {
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    margin: 60px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo img {
+    max-height: 280px;
+    /* Ajuste a altura conforme necessário */
+    max-width: 280px;
+    /* Garante que o logo não exceda a largura do seu contêiner */
+    margin-top: 40px;
+}
+
+/*Configução Menu */
+
+.navbar .container {
+    height: 2px;
+    margin-top: px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.10em;
+}
+
+/* Estilos para o menu hamburguer */
+@media (min-width: 576px) {
+    .navbar-expand-sm .navbar-collapse {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-preferred-size: auto;
+        margin-left: -111px;
+        margin-top: 115px;
+        justify-content: center;
+
+
+    }
+}
+
+
+.navbar-light .navbar-collapse .navbar-nav .nav-link {
+    color: #492c32;
+}
+
+.navbar-light .navbar-collapse .navbar-nav .nav-link:hover {
+    color: #ac9da0;
+}
+
+.navbar-toggler {
+    margin-left: 310px;
+    margin-top: -132px;
+    justify-content: end;
+
+
+}
+
+
+
+
+.collapse .navbar-collapse #nav-principal {
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Index Principal-------------------------------*/
+
+.principal {
+    max-width: auto;
+    margin: 0px auto;
+    padding: 50px;
+    text-align: center;
+    background-color: #c9869142;
+    background-attachment: fixed;
+
+}
+
+.principal img {
+    max-width: 100%;
+    height: auto;
+}
+
+.principal h1 {
+    font-size: 50px;
+    margin: 10px 0;
+    color: #643d44;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.principal p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.align-self-center .btn-light {
+    background-color: #643d44bb;
+    color: #fff;
+    border-radius: 10px;
+    width: 120px;
+}
+
+.align-self-center .btn-light:hover {
+    background-color: #b3a3a7;
+    color: #492c32;
+}
+
+.dropdown-menu {
+    background-color: none;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide{
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+
+/*configuração sobre nos*/
+
+.sobre-nos {
+ 
+    background-attachment: fixed;
+    color: #fff;
+    background-color:#643D44;
+   
+}
+
+ .nossos-servicos {
+    text-align: center;
+    color: #362125;
+}
+
+.row .sectionprincipal2{
+    border: 1px solid red;
+}
+
+.d-flex {
+    text-align: center;
+    justify-content: center; 
+    overflow: hidden;
+}
+
+
+.d-flex .titulo-principal {
+    background-color:#492c32;
+    color:#fff ;
+    height: 55px;
+    text-align: center;
+    margin-bottom: -2px;
+  
+   
+}
+
+.gradient-overlay {
+    position: relative; 
+}
+
+.gradient-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #94596586; /* Gradiente de exemplo - personalize as cores aqui */
+    opacity: 0; /* Você pode ajustar a opacidade conforme necessário */
+  
+}
+
+.gradient-overlay:hover::before {
+    opacity: 1; }
+
+.tipos .gradient-overlay #imagem-animada {
+    transition: transform 0.2s ease; /* Adicione uma transição suave para o movimento */
+}
+
+.tipos .gradient-overlay #imagem-animada:hover {
+    transform: scale(1.05); /* Aumenta a imagem em 5% quando o cursor estiver sobre ela */
+    cursor: pointer; /* Altera o cursor para indicar que a imagem é clicável */
+}
+
+/*************************************Produtos***********************************/
+
+#vendas {
+    padding: 25px;
+    background-color: #c9869142;
+}
+
+#vendas .listagem-venda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+}
+
+#vendas .cartao-venda {
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    align-items: center;
+    text-align: center;
+}
+
+#vendas .cartao-venda .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+
+#vendas .cartao-venda li {
+    list-style: none;
+    align-items: center;
+
+
+}
+
+#vendas .cartao-venda .informacoes span {
+
+    text-transform: uppercase;
+    font-size: 17px;
+    align-items: center;
+    color: #492c32;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+
+#vendas .cartao-venda .valores {
+    display: flex;
+    gap: 15px;
+    margin-top: -15px;
+    align-items: center;
+}
+
+
+#vendas .cartao-venda .preco {
+    font-size: 20px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+}
+
+
+.img-vendas {
+    width: 300px;
+    height: 300px;
+}
+
+
+#vendas .cartao-venda .btn-venda {
+    background-color: #643d44;
+    border-radius: 15px;
+    font-size: 15px;
+    margin-top: -30px;
+    height: 40px;
+    color: #fff;
+    border: none;
+
+}
+
+#vendas .cartao-venda .btn-venda:hover {
+    color: #ff0033;
+    background-color: #f0cdd454;
+
+}
+
+
+/* Configurações de contato *****************************************************/
+
+.contatos {
+    text-align: center;
+    background-color: #c9869142;
+    color: #3d252a;
+    padding: 20px;
+}
+
+/* Estilo para o mapa, ajuste conforme necessário */
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+/* Estilo para o formulário de contato */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para os links de redes sociais */
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Configurações Tratamento Corporal*********************************************/
+
+.tratamento-corporal {
+    background-image: url('../imagens/teste.png');
+    /* Substitua o caminho pela localização correta da imagem */
+    background-size: cover;
+    /* Ajuste o tamanho da imagem para cobrir toda a seção */
+    background-position: center;
+    /* Centralize a imagem horizontalmente e verticalmente */
+    background-repeat: no-repeat;
+    /* Evite a repetição da imagem */
+    height: 400px;
+    /* Defina a altura desejada para a seção */
+    /* Outros estilos de formatação conforme necessário */
+
+    background-attachment: fixed;
+}
+
+.tratamento-corporal1 {
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.tratamento-corporal2 {
+    text-align: center;
+}
+
+.tratamento-corporal2 .row p {
+    background-color: #d8cdcda2;
+    border-radius: 0px 0px 20px 20px;
+    color: #3d252a;
+}
+
+
+
+
+
+/******************FOOTER********************************************************/
+footer {
+    background-color: #5c5b5b94;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+
+}
+
+
+/*Media Queries******************************************************************/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .d-flex .tipos{
+        width: 100%
+    }
+ 
+
+
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+    
+
+}
+
+
+/*customização .btn-custom (botões principais*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+
+    .d-flex {
+        text-align: center;
+        justify-content: center;
+    }
+}

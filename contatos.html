@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="../ecommerce amanda/css/styles.css">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+  <div class="linha0"> <!-- Inicio Topo-->
+    
+      <a href="#">
+        <i class="fab fa-brands fa-facebook"></i>
+      </a>
+
+      <a href="https://www.instagram.com/larissachamarelli/" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    
+
+      <a href="#"> <i class="fab fa-whatsapp"></i>
+      </a>
+    
+  
+   </div> <!-- Fim Topo-->
+
+
+  </div>
+    <header> <!-- Início Cabeçalho-->
+
+      
+
+          <div class="logo">
+                <a href="index.html"><img src="imagens/logo.png" alt="logo"></a>
+            </div>
+      
+
+        <!--Inicio Menu navegação -->
+        <nav class="navbar navbar-expand-sm navbar-light">   <!-- Barra de Navegação-->
+          <div class="container">
+      
+    
+               <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <span class="navbar-toggler-icon"></span>
+               </button>
+      
+               <div class="collapse navbar-collapse" id="nav-principal">
+    
+                  <ul class="navbar-nav sm-center"> <!-- menu Navegação-->
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="produtos.html" class="nav-link" target="_blank">Produtos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+          
+                      <div class="dropdown-menu">
+                        <a href="tratamento-corporal.html" class="dropdown-item">Tratamento Corporal</a>
+                        <a href="facial.html" class="dropdown-item">Facial</a>
+          
+                      </div>
+          
+                    </li>
+
+
+
+                    <li class="nav-item">
+                      <a href="contatos.html" class="nav-link" target="_blank">Contatos</a>
+                    </li>
+      
+                  </ul>
+               </div>
+               
+            </div>
+    
+            </nav>
+
+        
+      </header> <!--Fim Cabeçalho-->
+    
+
+    <main> <!-- Inicio Contatos-->
+        <section class="contatos">
+     
+        </header>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" class="contatos.1">
+                    <!-- Formulário de contato -->
+                    <h2>Dúvidas? Entre em contato conosco!</h2>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <!-- Informações de contato -->
+                    <h2>Informações de Contato</h2>
+                    <div class="contact-info">
+                        <p><strong>Endereço:</strong> R. Luís Sobral, 1255 - apt 201 - Rancho Novo</p>
+                        <p><strong>Horário de Funcionamento:</strong> Segunda a Sexta, 9h às 18h</p>
+                        <p><strong>Telefones:</strong> (21) 99608-6264</p>
+                    </div>
+
+                    <form action="processar_contato.php" method="post">
+                        <!-- Resto do formulário aqui -->
+                    </form>
+                    
+    
+                    <!-- Link para o WhatsApp -->
+                    <p><a href="https://wa.me/seu-numero-de-telefone" target="_blank">Entre em contato pelo WhatsApp</a></p>
+    
+                    <!-- Links das redes sociais -->
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/clinicaafine/" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Mapa -->
+            <div id="https://www.google.com/maps/place/R.+Lu%C3%ADs+Sobral,+1255+-+apt+201+-+Rancho+Novo,+Nova+Igua%C3%A7u+-+RJ,+26013-736,+Brasil/data=!4m2!3m1!1s0x99664e9d22646f:0x8d77a2020464ad14?sa=X&ved=2ahUKEwiL37j1-p2BAxUZcKQEHQj7AZQQ8gF6BAgPEAA&ved=2ahUKEwiL37j1-p2BAxUZcKQEHQj7AZQQ8gF6BAgQEAI"></div>
+        </div>
+    
+
+    </main>
+
+   
+
+    <footer>
+
+
+       
+          <p>&copy; 2023 Todos os direitos reservados</p>
+        
+
+
+
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="script.js" ></script>
+
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <!--Feito por Jaqueline Rabelo
+    https://github.com/JaquelineRabelo-->
+
+</body>
+</html>
