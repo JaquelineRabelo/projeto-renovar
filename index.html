@@ -17,150 +17,143 @@
 
 </head>
 
+
+
 <body>
-  <div class="linha0"> <!-- Inicio Topo-->
+  <header>
 
-    <a href="#">
-      <i class="fab fa-brands fa-facebook"></i>
+    <nav class="navbar navbar-expand-md navbar-transparente">
+
+<div class="container">
+
+    <a href="index.html" class="navbar-brand"><img src="../projeto-afine/imagens/logo.png" width="200px">
     </a>
+               
+    <!--Menu hamburguer-->        
+<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
 
-    <a href="https://www.instagram.com/larissachamarelli/" target="_blank">
-      <i class="fab fa-instagram"></i>
-    </a>
+    <i class="fas fa-solid fa-bars text-dark-light">
+    </i>
+    
+</button>
 
-    <a href="#"> <i class="fab fa-whatsapp"></i>
-    </a>
-  </div> <!-- Fim Topo-->
+<div class="collapse navbar-collapse" id="nav-principal"> <!--Barra de Navegação - Listagem -->
 
-  <header> <!-- Início Cabeçalho-->
+<ul class="navbar-nav ml-auto">
 
-    <div class="logo">
-      <a href="index.html"><img src="imagens/logo.png" alt="logo"></a>
+    <li class="nav-item">
+    <a href="index.html" class="nav-link">Início</a>
+    </li>
+
+    <li class="nav-item">
+    <a href="servicos.html" class="nav-link ">Serviços</a>
+    </li>
+                        
+    <li class="nav-item">
+    <a href="produtos.html" class="nav-link">Produtos</a>
+    </li>
+
+    <li class="nav-item">
+      <a href="contatos.html" class="nav-link">Contatos</a>
+      </li>
+    <li class="nav-item divisor">   
+     </li>
+
+
+
+
     </div>
 
-    <nav class="navbar navbar-expand-sm navbar-light"><!-- Inicio Barra de Navegação-->
-      <div class="container"> <!--Inicio container-->
 
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+ </div> <!--fim container-->
 
-        <div class="collapse navbar-collapse" id="nav-principal"> <!--Inicio collapse-->
-          <ul class="navbar-nav sm-center"> <!-- Inicio ul menu Navegação-->
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a href="produtos.html" class="nav-link" target="_blank">Produtos</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+        </div>
 
-              <div class="dropdown-menu">
-                <a href="tratamento-corporal.html" class="dropdown-item">Tratamentos Corporal</a>
-                <a href="facial.html" class="dropdown-item">Facial</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="contatos.html" class="nav-link" target="_blank">Contatos</a>
-            </li>
-          </ul> <!-- Fim ul menu Navegação-->
-        </div> <!--Fim collapse-->
-      </div> <!--Fim container-->
-    </nav> <!-- Fim Barra de Navegação-->
-  </header> <!--Fim Cabeçalho-->
+        
+    </nav>
 
+</header> <!--Fim cabeçalho-->
 
-  <main>
-    <section class="principal"> <!-- Inicio Section Principal-->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 d-flex">
-            <div class="align-self-center justify-content-center">
+<main>
+  <section class="principal"> <!-- Inicio Section Principal-->
+          <div id="carousel-indicadores" class="carousel slide" data-ride="carousel"> <!--incio slide-->
 
-              <h1 class="display-3">Método de emagrecimento inovador!</h1>
-              <br>
-              <a href="servico.html" class="btn btn-light" target="_blank"> Veja mais</a>
-              <br> <br>
+            <ol class="carousel-indicators"> <!--Indicadores-->
+              <li class="acticve" data-target="#carousel-indicadores" data-slide-to="0">
+              </li>
 
-            </div>
-          </div>
+              <li data-target="#carousel-indicadores" data-slide-to="1">
+              </li>
+            </ol> <!-- Fim Indicadores-->
 
-          <div class="col-md-6" class='d-flex'>
-            <div id="carousel-indicadores" class="carousel slide" data-ride="carousel"> <!--incio slide-->
+            <div class="carousel-inner"> <!--incio inner-->
+              <div class="carousel-item active"> <!--incio item active-->
+                <picture>
+                  <source media="(max-width: 800px)" srcset="../projeto-afine/imagens/banner1-médio.png">
+                  <img src="../projeto-afine/imagens/banner1.png" class="img-fluid" alt="1"></picture>
+              </div> <!--fim item 1 acticve-->
 
-              <ol class="carousel-indicators"> <!--Indicadores-->
-                <li class="acticve" data-target="#carousel-indicadores" data-slide-to="0">
-                </li>
+              <div class="carousel-item"> <!--incio item 2-->
+                <picture>
+              <source media="(max-width: 800px)" srcset="../projeto-afine/imagens/banner2-médio.png">
+                  <img src="../projeto-afine/imagens/banner2.png" class="img-fluid" alt="2"></picture>
+              </div> <!--fim item 2-->
 
-                <li data-target="#carousel-indicadores" data-slide-to="1">
-                </li>
+        
+            <!-- controle Inicio-->
+            <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a> <!-- fim link 1-->
 
-                <li data-target="#carousel-indicadores" data-slide-to="2">
-                </li>
-              </ol> <!-- Fim Indicadores-->
+            <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a> <!--fim  link 2-->
 
-              <div class="carousel-inner"> <!--incio inner-->
-                <div class="carousel-item active"> <!--incio item active-->
-                  <img src="imagens/1.jpg" class="img-fluid" alt="1">
-                </div> <!--fim item 1 acticve-->
-
-                <div class="carousel-item"> <!--incio item 2-->
-                  <img src="imagens/4.jpg" class="img-fluid" alt="2">
-                </div> <!--fim item 2-->
-
-                <div class="carousel-item"> <!--Inicio item 3-->
-                  <img src="imagens/3.jpg" class="img-fluid" alt="3">
-                </div> <!--fim item 3-->
-              </div> <!--fim inner -->
-
-              <!-- controle Inicio-->
-              <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </a> <!-- fim link 1-->
-
-              <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </a> <!--fim  link 2-->
-
-            </div> <!--fim carousel slide- controles-->
-    </section> <!-- Fim Section Principal-->
-    <br> <br> 
-
+          </div> <!--fim carousel slide- controles-->
+  </section> <!-- Fim Section Principal-->
+  
+<br> <br> <br>
     <section class="principal2"> <!--inicio section principal2-->
 
       <div class="nossos-servicos">
-        <h1>Nossos Serviços</h1>
+        <h2>TRATAMENTOS PARA O SEU CUIDADO!</h2>
+        
       </div>
       <b><b>
       <div class="container" class="tratamento">
         <div class="row" class="section principal2">
-          <div class="col-md-6 d-flex">
+          <div class="col-md-4 d-flex">
             <div class="align-self-center text-center">
-              <a href="tratamento-corporal.html">
-                <h2 class="titulo-principal" >Tratamento Corporal</h2></a>
-
                 <figure class="tipos gradient-overlay">
-                  <img  src="../projeto-afine/imagens/corpo-principal.png" width="100%" height="100%" alt="tratamento corporal" id="imagem-animada" >
+                  <img  src="../projeto-afine/imagens/tratamento corporal.png" width="100%" height="100%" alt="tratamento corporal" id="imagem-animada" >
                   <h2 class="titulo-img text-center"></h2>
                   <p class="paragrafo-img"></p>
+                  
               
               </figure>
-      
+              <a href="tratamento-corporal.html"><button class="btn btn-lg btn-custom btn-roxo" >Tratamento corporal</button></a>
               <br> <br>
             </div> 
           </div>
 
-          <div class="col-md-6 d-flex">
+          <div class="col-md-4 d-flex">
             <div class="align-self-center">
-              <a href="facial.html">
-                <h2 class="titulo-principal">Tratamento Facial</h2>
-              </a>
+             
               <figure class="tipos gradient-overlay">
-                <img src="../projeto-afine/imagens/face.png" width="100%" height="100%" alt="tratamento facial">
-                
+                <img src="../projeto-afine/imagens/tratamento facil.png" width="100%" height="100% alt="tratamento facial">
               </figure>
               
+              <a href="tratatamento-facil.html"><button class="btn btn-lg btn-custom btn-roxo">Tratamento Facial</button></a>
+              <br> <br>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex">
+            <div class="align-self-center">
+              <figure class="tipos gradient-overlay">
+                <img src="../projeto-afine/imagens/nossos produtos.png" width="100%" height="100%" alt="tratamento facial">
+                
+              </figure>
+              <a href="produtos.html"><button class="btn btn-lg btn-custom btn-roxo">Nossos Protudos</button></a>
             
               <br> <br>
             </div>
