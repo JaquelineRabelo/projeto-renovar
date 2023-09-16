@@ -18,25 +18,28 @@ nav.navbar-transparente {
     z-index: 1;
 }
 
-.nav-link{
-    color:#492c32
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    color: #643D44
 }
 
 
-.nav-link:hover{
+.nav-link:hover {
     color: #cf959f;
-    }
+}
 
 .navbar-toggler {
-color:#3d252a;
-border-color: rgba (255,255,255,0.5);
-/*usado para definir a bordar do menu hamburguer*/
+    color: #3d252a;
+    border-color: rgba (255, 255, 255, 0.5);
+    /*usado para definir a bordar do menu hamburguer*/
 }
 
 .divisor {
-width: 1px;
-background: white;
-margin: 12px 15px;
+    width: 1px;
+    background: white;
+    margin: 12px 15px;
 }
 
 
@@ -48,15 +51,16 @@ margin: 12px 15px;
     text-align: center;
     background-attachment: fixed;
     background-image: linear-gradient(to bottom, #f3c9d2, #fff);
-   
+
 
 }
 
-.nossos-servicos{
-    margin-bottom:36px;
-    
+.nossos-servicos {
+    margin-bottom: 36px;
+
 }
-.nossos-servicos h2{
+
+.nossos-servicos h2 {
     color: #a06670;
 }
 
@@ -65,22 +69,23 @@ margin: 12px 15px;
     margin: 10px 0;
 }
 
+
 .btn-custom {
-    color:white;
+    color: white;
     border-radius: 500px;
-    -webkit-border-radius:500px;
+    -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
-    padding: 10px 20px; 
+    padding: 10px 20px;
 }
 
 .btn-roxo {
-    background:#643D44;
-   }
+    background: #643D44;
+}
 
-   .btn-roxo:hover{
-    background:#ffb3c1;
+.btn-roxo:hover {
+    background: #ffb3c1;
     color: white;
-   }
+}
 
 
 
@@ -92,7 +97,8 @@ margin: 12px 15px;
 #carousel-indicadores.carousel {
     width: 100%;
     max-width: 100%;
-    height: auto; /* Isso manterá a proporção da imagem */
+    height: auto;
+    /* Isso manterá a proporção da imagem */
 }
 
 #carousel-indicadores .carousel-inner {
@@ -111,7 +117,7 @@ margin: 12px 15px;
     width: 100%;
     max-width: 100%;
     height: 100%;
-    
+
 }
 
 .slide {
@@ -137,13 +143,13 @@ margin: 12px 15px;
 
 }
 
-.nossos-servicos{
+.nossos-servicos {
     text-align: center;
     color: #3d252a;
 }
 
 
-.row .sectionprincipal2{
+.row .sectionprincipal2 {
     border: 1px solid red;
 }
 
@@ -333,19 +339,9 @@ form {
 
 /* Configurações Tratamento Corporal*********************************************/
 
-.tratamento-corporal {
-    background-image: url('../imagens/teste.png');
-    /* Substitua o caminho pela localização correta da imagem */
-    background-size: cover;
-    /* Ajuste o tamanho da imagem para cobrir toda a seção */
-    background-position: center;
-    /* Centralize a imagem horizontalmente e verticalmente */
-    background-repeat: no-repeat;
-    /* Evite a repetição da imagem */
-    height: 400px;
-    /* Defina a altura desejada para a seção */
-    /* Outros estilos de formatação conforme necessário */
 
+
+#tratamentos .tratamento-corporal picture{
     background-attachment: fixed;
 }
 
@@ -353,29 +349,60 @@ form {
     padding: 30px;
     text-align: center;
     width: 100%;
+    background-color: #fff;
 }
 
-.tratamento-corporal2 {
+
+
+
+#tratamentos{
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px; /* Defina a largura máxima desejada */
+  }
+
+  .container li{
+    list-style: none;
+  }
+  
+  .item {
+    width: calc(33.33% - 10px); /* Calcula 1/3 da largura da tela, com uma margem de 20px entre as colunas */
+    margin-bottom: 10px; /* Espaçamento entre as linhas */
+    box-sizing: border-box; /* Garante que as margens não aumentem o tamanho total */
     text-align: center;
-}
+    padding: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
 
-.tratamento-corporal2 .row p {
-    background-color: #d8cdcda2;
-    border-radius: 0px 0px 20px 20px;
-    color: #3d252a;
-}
-
-
+  .item img{
+    width: 100%;
+    height: 250px;
+  }
+   
+    
+  /* Media query para 768px ou menos */
+  @media (max-width: 768px) {
+    .item {
+      width: calc(50% - 20px); /* Calcula 1/2 da largura da tela, com uma margem de 20px entre as colunas */
+    }
+  }
 
 
 
 /******************FOOTER********************************************************/
 footer {
-    background-color: #5c5b5b94;
+    background-color: #ad696994;
     color: #fff;
     text-align: center;
     padding: 10px;
     position: relative;
+    background-attachment: fixed;
 
 }
 
@@ -383,8 +410,7 @@ footer {
 /*Media Queries******************************************************************/
 
 /* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) 
-{
+@media (max-width: 575.98px) {
 
     .d-flex .tipos {
         width: 100%
@@ -394,68 +420,91 @@ footer {
         font-size: 40px;
     }
 
-    .nossos-servicos h2{
+    .nossos-servicos h2 {
         color: #a06670;
         font-size: 23px;
     }
+
+    #carousel-indicadores img{
+    
+    }
+
+
+    .gradient-overlay img{
+
+        width:300px ;
+        height:201px;
+        padding: 10px;
+        margin: 20px;
+    }
+
+
+    .item img{
+        width: 100%;
+        height: 150px;
+      }
+ 
 }
-    /* Small devices (landscape phones, 576px and up) */
-    @media (min-width: 576px) and (max-width: 767.98px)
 
-    /* Medium devices (tablets, 768px and up)*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px)
+/* Medium devices (tablets, 768px and up)*/
     {
 
-        .d-flex .tipos {
-            width: 100%
-        }
-    
-        .principal h1 {
-            font-size: 41px;
-        }
+    .d-flex .tipos {
+        width: 100%
     }
 
-
-    /* Large devices (desktops, 992px and up) */
-    @media (min-width: 992px) and (max-width: 1199.98px) 
-    
-    {  
-      
+    .principal h1 {
+        font-size: 41px;
     }
 
+    .item img{
+        width: 100%;
+        height: 150px;
+      }
+ 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
     
+    .item img{
+        width: 100%;
+        height: 180px;
+      }
+}
 
 
-    /* Extra large devices (large desktops, 1200px and up)*/
-    @media (min-width: 1200px) 
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+
+  
+}
+
+
+
+
+/*customização .btn-custom (botões principais*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+
     
-    {
-
-        
-    }
-        
-    
-
-
-    /*customização .btn-custom (botões principais*/
-
-    /* Extra small devices (portrait phones, less than 576px) */
-    @media (max-width: 575.98px) {}
-
-    /* Small devices (landscape phones, 576px and up) */
-    @media (min-width: 576px) and (max-width: 767.98px) {}
-
-    /* Medium devices (tablets, 768px and up)*/
-    @media (min-width: 768px) and (max-width: 991.98px) {}
-
-    /* Large devices (desktops, 992px and up) */
-    @media (min-width: 992px) and (max-width: 1199.98px) {}
-
-    /* Extra large devices (large desktops, 1200px and up)*/
-    @media (min-width: 1200px) {
-
-
-        .d-flex {
-            text-align: center;
-            justify-content: center;
-        }
-    }
+}
