@@ -77,9 +77,9 @@ nav.navbar-transparente {
 
 
 
-/*Index Principal-------------------------------*/
+/*Index banner-------------------------------*/
 
-.principal {
+.banner {
     max-width: auto;
     margin: 0 auto;
     text-align: center;
@@ -89,39 +89,32 @@ nav.navbar-transparente {
 
 }
 
-.nossos-servicos {
-    margin-bottom: 36px;
-
-}
-
-.nossos-servicos h2 {
-    color: #a06670;
-}
-
-.principal p {
+.banner p {
     font-size: 16px;
     margin: 10px 0;
 }
 
 
 .btn-custom {
-    color: white;
+    color:#492c32;
     border-radius: 500px;
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
     padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .btn-roxo {
-    background: #643D44;
+    background: #a36570cb;
+    color: #fff;
 }
 
 .btn-roxo:hover {
     background: #ffb3c1;
     color: white;
 }
-
-
 
 .carousel {
     display: flex;
@@ -131,8 +124,7 @@ nav.navbar-transparente {
 #carousel-indicadores.carousel {
     width: 100%;
     max-width: 100%;
-    height: auto;
-    /* Isso manterá a proporção da imagem */
+    height: auto; /* Isso manterá a proporção da imagem */
 }
 
 #carousel-indicadores .carousel-inner {
@@ -164,17 +156,14 @@ nav.navbar-transparente {
     height: 300px;
     background-color: rgba(0, 0, 0, 0.137);
 }
-
-
-
-/*configuração sobre nos*/
+/*configuração sobre nos******************************************************/
 
 
 #sobre-nos .separador {
     padding: 0;
     width: 50px !important;
     height: 3px;
-    background:#a86774;
+    background: #a86774;
     line-height: 0;
     display: table;
     clear: both;
@@ -184,13 +173,13 @@ nav.navbar-transparente {
 #sobre-nos {
 
     text-align: center;
-    height: 300px;
+    height: 500px;
 
 
 
 }
 
-#sobre-nos .row .nos {
+#sobre-nos .row {
 
     height: 250px;
     justify-content: center;
@@ -201,28 +190,32 @@ nav.navbar-transparente {
 }
 
 #sobre-nos .col-md-12 {
-    
-        justify-content: center center;
-        margin-bottom: -89px;
-    
+
+    justify-content: center center;
+    margin-bottom: -45px;
+
 
 }
 
 #sobre-nos h2 {
     justify-content: center;
     align-items: center;
-    margin-top: 66px;
+    text-align: center;
     color: #6d434b;
 
 }
 
-#sobre-nos p {
+#sobre-nos .text-nos {
 
-    color: #492c32;
-    margin-top: 47px;
+    color: #884654;
+    margin-top: 51px;
     font-size: 1rem;
     text-align: justify;
     font-weight: 400;
+}
+
+#sobre-nos .text-nos a {
+    color: #884654;
 }
 
 #sobre-nos .align-self-center {
@@ -230,18 +223,75 @@ nav.navbar-transparente {
     margin: auto;
 }
 
-.nossos-servicos {
-    text-align: center;
-    color: #3d252a;
-    margin-bottom: 204px;
+/********************configuração section vantagens Index*********************/
+.container-vantagens {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 118px;
 }
 
+
+.itens-vantagens {
+
+    align-items: center;
+    border: 1px solid #fadde9;
+    border-radius: 10px;
+    width: 27%;
+    padding: 10px;
+    gap: 15px;
+    margin-top:px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titulo-vant {
+    color: #94596586;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.container-vantagens .itens-vantagens .parag-vant {
+    justify-content: center;
+    text-align: center;
+    color: #643d44b9
+}
+
+/******Configurações nossos servicos Index**************************************/
+.nossos-servicos {
+    text-align: center;
+    color: #3d252abb;
+    margin-bottom: 148px;
+}
+
+.nossos-servicos h2 {
+    color: #ffffff;
+    justify-content: left;
+    text-align: left;
+    margin-left: 97px;
+    padding-top: 54px;
+    font-size: 40px;
+    
+}
+
+.nossos-servicos p {
+    color: #ffffff;
+    font-size: 23px;
+    justify-content: left;
+    text-align: left;
+    margin-left: 97px;
+
+}
 
 
 
 .row {
     margin: auto;
-    margin-bottom: 96px;
+   
 
 }
 
@@ -257,6 +307,7 @@ nav.navbar-transparente {
 
 .gradient-overlay {
     position: relative;
+    margin-top: -63px;
 }
 
 .gradient-overlay::before {
@@ -279,6 +330,15 @@ figure {
     height: 250px;
 }
 
+.tipos-gradient-overlay .text-servicos{
+    background-color: #6d434b;
+}
+
+
+.gradient-overlay img {
+    border-radius: 15px 15px 0 0;
+}
+
 .gradient-overlay:hover::before {
     opacity: 1;
 }
@@ -294,6 +354,84 @@ figure {
     cursor: pointer;
     /* Altera o cursor para indicar que a imagem é clicável */
 }
+
+/************************** Configuracao Section Clinica***********/
+
+
+
+#clinica {
+
+    text-align: center;
+    height: 380px;
+    margin-top: 218px;
+    
+}
+
+#clinica .row {
+
+    height: 250px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+#clinica .col-md-12 {
+
+    justify-content: center center;
+    margin-bottom: -45px;
+
+
+}
+
+#clinica h2 {
+    
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #6d434bef;
+    
+    
+
+}
+
+#clinica .text-nos {
+
+    justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #6d434bbb;
+        font-size: 25px;
+        font-weight:500;
+}
+
+#clinica .text-nos a {
+    color: #884654;
+}
+
+#clinica .align-self-center {
+    max-width: 960px;
+    margin: auto;
+}
+
+
+.btn-avaliacao{
+    background-color: #a36570cb;
+    color: white;
+    border-radius: 6px;
+    width: 175px;
+    height: 43px;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+.btn-avaliacao:hover {
+    background: #ffb3c1;
+    color: white;
+}
+
 
 /*************************************Produtos***********************************/
 
@@ -432,24 +570,34 @@ form {
 
 
 
+
 #tratamentos .tratamento-corporal picture {
     background-attachment: fixed;
 }
 
 .tratamento-corporal1 {
     padding: 30px;
-    text-align: center;
+    text-align: justify;
     width: 100%;
     background-color: #fff;
+    padding: 5px;
+    align-items: center;
+
 }
 
 
 .tratamento-corporal1 p {
     color: #925965;
+
+    text-align: justify;
+    justify-content: center;
+    border: 1px solid red;
+    align-items: center;
 }
 
 #tratamentos {
     background-attachment: fixed;
+    border-radius: 20px;
 }
 
 .container {
@@ -506,10 +654,25 @@ form {
     /* Adicionar uma transição suave */
 
 
+
+
 }
 
 
+
+
+.servicos {
+    background-image: url(../imagens/banner-servicos.png);
+    height: 385px;
+}
+
+
+
+
+
 /*TRATAMENTO FACIAL*******************************************************/
+
+
 .checklist {
     list-style: none;
     padding: 0;
@@ -577,6 +740,13 @@ footer ul li {
 }
 
 /*Media Queries******************************************************************/
+/* Extra small devices (portrait phones, less than 300px)*/
+@media (max-width: 300px)
+{
+.itens-vantagens {
+
+    margin-top: 124px;
+}}
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
@@ -585,25 +755,27 @@ footer ul li {
         width: 100%
     }
 
-    .principal h1 {
+    .banner h1 {
         font-size: 40px;
+
     }
 
-    .nossos-servicos h2 {
-        color: #a06670;
-        font-size: 23px;
-    }
 
+    nav.navbar-transparente{
+        background-attachment: fixed;
+    }
 
     .gradient-overlay img {
 
-        width: 300px;
-        height: 201px;
-        padding: 10px;
-        margin: 20px;
+        width: 100%;
+        padding: 0;
+        border-radius: 15px 15px 0 0;
     }
 
-
+    .gradient-overlay {
+        position: relative;
+        margin-top: 50px;
+    }
 
     .item {
         width: 100%;
@@ -642,12 +814,90 @@ footer ul li {
         margin-left: -5px;
     }
 
+    .itens-vantagens{
+        width: 33.33%;
+        height: 200px;
+    }
+
+    .itens-vantagens p{
+        font-size: 12px;
+    }
 
     .nossos-servicos {
         text-align: center;
-        color: #3d252a;
-        margin-bottom: 89px;
+        color: #3d252abb;
+        margin-bottom: 0px;
     }
+    
+    .nossos-servicos h2 {
+        color: #ffffff;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding-top: 47px;
+    
+    }
+    
+    .nossos-servicos p {
+        color: #ffffff;
+        font-size: 23px;
+        justify-content: left;
+        text-align: left;
+        margin-left: 97px;
+    
+    }
+
+    #clinica {
+        height: 400px;
+        margin-top: 817px;
+    }
+
+    #sobre-nos .text-nos {
+        color: #884654;
+        margin-top: 30px;
+        font-size: 17px;
+        text-align: justify;
+        font-weight: 400;
+    }
+
+    #sobre-nos h2 { 
+        font-size: 1.8rem;
+        margin-top: 34px
+    }
+
+    .titulo-vant {
+        color: #94596586;
+        font-size: 14px;
+        justify-content: center;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .itens-vantagens p {
+        font-size: 11px;
+    }
+
+    .itens-vantagens {
+        align-items: center;
+        border: 1px solid #fadde9;
+        border-radius: 10px;
+        width: 27%;
+        padding: 10px;
+        gap: 15px;
+        margin-top: 84px;
+        justify-content: center;
+        align-items: center;
+    }
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      margin: auto 0;
+    }
+#servicos{
+    margin-top: -21px;
+}
+
 
 }
 
@@ -660,7 +910,7 @@ footer ul li {
         width: 100%
     }
 
-    .principal h1 {
+    .banner h1 {
         font-size: 41px;
     }
 
@@ -696,11 +946,33 @@ footer ul li {
         transform: rotate(-180deg);
     }
 
+    .itens-vantagens {
+        margin-top: 40px;
+    }
 
 
     .barra-lateral p {
         margin-bottom: -10px;
         margin-left: 3px;
+    }
+
+    #clinica {
+        height: 400px;
+        margin-top: 964px;
+    }
+    
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 0px;
+        margin-left: -15px;
+    }
+
+    .gradient-overlay {
+        position: relative;
+        margin-top: 50px;
     }
 
 }
@@ -721,7 +993,7 @@ footer ul li {
         /* margin: auto 1rem; */
         height: 170px;
 
-    }
+    } }
 
     /* Large devices (desktops, 992px and up) */
     @media (min-width: 992px) and (max-width: 1199.98px) {}
