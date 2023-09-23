@@ -4,43 +4,6 @@ body {
     padding: 0;
 }
 
-
-
-/*Configução Logo*/
-
-.site {
-    width: 100%;
-    float: right;
-    /* Faz com que a div do site fique à esquerda */
-    z-index: 1;
-}
-
-.barra-lateral {
-    width: 6%;
-    position: fixed;
-    top: 40%;
-    /* Centraliza verticalmente */
-    right: -30px;
-    background-color: #794b54;
-    padding: 16px;
-    text-align: center;
-    writing-mode: vertical-lr;
-    z-index: 1;
-    color: #fff;
-    transform: rotate(-180deg);
-    /* Rotação do texto para a direita */
-}
-
-.barra-lateral p {
-
-
-    margin-bottom: -10px;
-    margin-left: 30px;
-
-}
-
-/* Estilos adicionais para o texto "Fale Conosco" */
-
 /*Configuração Navbar****************************/
 
 
@@ -96,7 +59,7 @@ nav.navbar-transparente {
 
 
 .btn-custom {
-    color:#492c32;
+    color: #492c32;
     border-radius: 500px;
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
@@ -124,7 +87,8 @@ nav.navbar-transparente {
 #carousel-indicadores.carousel {
     width: 100%;
     max-width: 100%;
-    height: auto; /* Isso manterá a proporção da imagem */
+    height: auto;
+    /* Isso manterá a proporção da imagem */
 }
 
 #carousel-indicadores .carousel-inner {
@@ -156,6 +120,7 @@ nav.navbar-transparente {
     height: 300px;
     background-color: rgba(0, 0, 0, 0.137);
 }
+
 /*configuração sobre nos******************************************************/
 
 
@@ -214,10 +179,6 @@ nav.navbar-transparente {
     font-weight: 400;
 }
 
-#sobre-nos .text-nos a {
-    color: #884654;
-}
-
 #sobre-nos .align-self-center {
     max-width: 960px;
     margin: auto;
@@ -241,10 +202,10 @@ nav.navbar-transparente {
     width: 27%;
     padding: 10px;
     gap: 15px;
-    margin-top:px;
+    margin-top: px;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .titulo-vant {
@@ -275,7 +236,7 @@ nav.navbar-transparente {
     margin-left: 97px;
     padding-top: 54px;
     font-size: 40px;
-    
+
 }
 
 .nossos-servicos p {
@@ -289,11 +250,7 @@ nav.navbar-transparente {
 
 
 
-.row {
-    margin: auto;
-   
 
-}
 
 .d-flex .titulo-principal {
     background-color: #492c32;
@@ -330,7 +287,7 @@ figure {
     height: 250px;
 }
 
-.tipos-gradient-overlay .text-servicos{
+.tipos-gradient-overlay .text-servicos {
     background-color: #6d434b;
 }
 
@@ -364,7 +321,7 @@ figure {
     text-align: center;
     height: 380px;
     margin-top: 218px;
-    
+
 }
 
 #clinica .row {
@@ -386,24 +343,24 @@ figure {
 }
 
 #clinica h2 {
-    
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: #6d434bef;
-    
-    
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #6d434bef;
+
+
 
 }
 
 #clinica .text-nos {
 
     justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: #6d434bbb;
-        font-size: 25px;
-        font-weight:500;
+    align-items: center;
+    text-align: center;
+    color: #6d434bbb;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 #clinica .text-nos a {
@@ -416,7 +373,7 @@ figure {
 }
 
 
-.btn-avaliacao{
+.btn-avaliacao {
     background-color: #a36570cb;
     color: white;
     border-radius: 6px;
@@ -697,35 +654,45 @@ form {
 
 
 /******************FOOTER********************************************************/
+
 footer {
-    background-color: #cf959f5d;
-    color: #7c4c56;
-    padding: 50px 0px 20px 0px;
+    background: #e1cdcdbd;
+    padding: 10px 0px 20px 0px;
     position: relative;
-    background-attachment: fixed;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 
 }
 
 
+footer .row {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    
+}
+
+footer .col-md-2{
+    justify-content: end;
+}
+
 footer h4 {
-    color: #492c32;
+    color: #3d252a;
     font-size: 0.8em;
     text-transform: uppercase;
 }
 
 footer .navbar-nav a {
 
-    color: white;
+    color: #643d44b0;
     font-size: 0.8em;
 
 }
 
 footer .navbar-nav a:hover {
 
-    color: #643D44;
+    color: #e998aa;
     text-decoration: none;
 }
 
@@ -740,13 +707,7 @@ footer ul li {
 }
 
 /*Media Queries******************************************************************/
-/* Extra small devices (portrait phones, less than 300px)*/
-@media (max-width: 300px)
-{
-.itens-vantagens {
 
-    margin-top: 124px;
-}}
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
@@ -761,7 +722,7 @@ footer ul li {
     }
 
 
-    nav.navbar-transparente{
+    nav.navbar-transparente {
         background-attachment: fixed;
     }
 
@@ -790,36 +751,8 @@ footer ul li {
     }
 
 
-    .barra-lateral p {
-        margin-bottom: -9px;
-        margin-left: -5px;
-    }
 
-    .barra-lateral {
-        width: 0%;
-        position: fixed;
-        top: 22%;
-        right: -14px;
-        background-color: #8d5762;
-        padding: 16px;
-        text-align: center;
-        writing-mode: vertical-lr;
-        z-index: 1;
-        color: #fff;
-        transform: rotate(-180deg);
-    }
-
-    .barra-lateral p {
-        margin-bottom: -9px;
-        margin-left: -5px;
-    }
-
-    .itens-vantagens{
-        width: 33.33%;
-        height: 200px;
-    }
-
-    .itens-vantagens p{
+    .itens-vantagens p {
         font-size: 12px;
     }
 
@@ -828,23 +761,23 @@ footer ul li {
         color: #3d252abb;
         margin-bottom: 0px;
     }
-    
+
     .nossos-servicos h2 {
         color: #ffffff;
         justify-content: center;
         text-align: center;
         margin: auto;
         padding-top: 47px;
-    
+
     }
-    
+
     .nossos-servicos p {
         color: #ffffff;
         font-size: 23px;
         justify-content: left;
         text-align: left;
         margin-left: 97px;
-    
+
     }
 
     #clinica {
@@ -854,13 +787,14 @@ footer ul li {
 
     #sobre-nos .text-nos {
         color: #884654;
-        margin-top: 30px;
+        margin-top: 0px;
         font-size: 17px;
         text-align: justify;
         font-weight: 400;
+        padding: 31px;
     }
 
-    #sobre-nos h2 { 
+    #sobre-nos h2 {
         font-size: 1.8rem;
         margin-top: 34px
     }
@@ -872,6 +806,7 @@ footer ul li {
         text-align: center;
         font-weight: bolder;
     }
+
     .itens-vantagens p {
         font-size: 11px;
     }
@@ -883,20 +818,22 @@ footer ul li {
         width: 27%;
         padding: 10px;
         gap: 15px;
-        margin-top: 84px;
         justify-content: center;
         align-items: center;
+        height: 200px;
+        margin-top: 78px;
     }
-    .row {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-      margin: auto 0;
+
+
+
+    #servicos {
+        margin-top: -21px;
     }
-#servicos{
-    margin-top: -21px;
-}
+
+    .container-vantagens {
+        padding: 6px;
+    }
+
 
 
 }
@@ -920,60 +857,53 @@ footer ul li {
 
     }
 
-
-
     .item {
         width: 48%;
     }
 
-
-    .barra-lateral p {
-        margin-bottom: -9px;
-        margin-left: -5px;
-    }
-
-    .barra-lateral {
-
-        position: fixed;
-        top: 36%;
-        right: -21px;
-        background-color: #8d5762;
-        padding: 27px;
-        text-align: center;
-        writing-mode: vertical-lr;
-        z-index: 1;
-        color: #fff;
-        transform: rotate(-180deg);
-    }
-
     .itens-vantagens {
-        margin-top: 40px;
-    }
-
-
-    .barra-lateral p {
-        margin-bottom: -10px;
-        margin-left: 3px;
+        margin-top: 51px;
     }
 
     #clinica {
         height: 400px;
         margin-top: 964px;
     }
-    
-    .row {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin-right: 0px;
-        margin-left: -15px;
-    }
+
+
 
     .gradient-overlay {
         position: relative;
         margin-top: 50px;
     }
+
+
+    #sobre-nos .text-nos {
+        padding: 34px;
+        margin-top: 30px;
+    }
+
+    #sobre-nos h2 {
+        margin-top: 43px;
+    }
+
+    .nossos-servicos .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+
+    .gradient-overlay img {
+        width: 86%;
+        padding: 0;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .btn-custom {
+        width: 86%;
+    }
+
+
 
 }
 
@@ -993,32 +923,58 @@ footer ul li {
         /* margin: auto 1rem; */
         height: 170px;
 
-    } }
+    }
 
-    /* Large devices (desktops, 992px and up) */
-    @media (min-width: 992px) and (max-width: 1199.98px) {}
+    #sobre-nos .text-nos {
+        padding: 34px;
+        margin-top: 30px;
+    }
 
+    #sobre-nos h2 {
+        margin-top: 43px;
+    }
 
+    .itens-vantagens {
+        margin-top: 51px;
+    }
 
-
-    /* Extra large devices (large desktops, 1200px and up)*/
-    @media (min-width: 1200px) {}
-
-
-
-
-    /*customização .btn-custom (botões principais*/
-
-    /* Extra small devices (portrait phones, less than 576px) */
-    @media (max-width: 575.98px) {}
-
-    /* Small devices (landscape phones, 576px and up) */
-    @media (min-width: 576px) and (max-width: 767.98px) {}
+    .nossos-servicos .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 
 
 
-    /* Large devices (desktops, 992px and up) */
-    @media (min-width: 992px) and (max-width: 1199.98px) {}
 
-    /* Extra large devices (large desktops, 1200px and up)*/
-    @media (min-width: 1200px) {}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+.nossos-servicos .col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+
+
+
+/*customização .btn-custom (botões principais*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
