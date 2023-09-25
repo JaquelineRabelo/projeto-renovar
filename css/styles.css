@@ -2,7 +2,11 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    /*ocultar a barra de rolagem horizontal*/
 }
+
+
 
 /*Configuração Navbar****************************/
 
@@ -175,7 +179,7 @@ nav.navbar-transparente {
     color: #884654;
     margin-top: 51px;
     font-size: 1rem;
-    text-align: justify;
+    text-align: center;
     font-weight: 400;
 }
 
@@ -202,7 +206,7 @@ nav.navbar-transparente {
     width: 27%;
     padding: 10px;
     gap: 15px;
-    margin-top: px;
+    margin-top: 47px;
     justify-content: center;
     align-items: center;
 
@@ -292,13 +296,6 @@ figure {
 }
 
 
-.gradient-overlay img {
-    border-radius: 15px 15px 0 0;
-}
-
-.gradient-overlay:hover::before {
-    opacity: 1;
-}
 
 .tipos .gradient-overlay #imagem-animada {
     transition: transform 0.2s ease;
@@ -670,10 +667,10 @@ footer .row {
     text-align: center;
 
 
-    
+
 }
 
-footer .col-md-2{
+footer .col-md-2 {
     justify-content: end;
 }
 
@@ -708,9 +705,10 @@ footer ul li {
 
 /*Media Queries******************************************************************/
 
+@media(min-width: 312px) {}
 
 /* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
+@media(max-width: 575.98px) {
 
     .d-flex .tipos {
         width: 100%
@@ -801,7 +799,7 @@ footer ul li {
 
     .titulo-vant {
         color: #94596586;
-        font-size: 14px;
+        font-size: 12px;
         justify-content: center;
         text-align: center;
         font-weight: bolder;
@@ -816,7 +814,7 @@ footer ul li {
         border: 1px solid #fadde9;
         border-radius: 10px;
         width: 27%;
-        padding: 10px;
+        padding: 9px;
         gap: 15px;
         justify-content: center;
         align-items: center;
@@ -831,10 +829,8 @@ footer ul li {
     }
 
     .container-vantagens {
-        padding: 6px;
+        padding: 3px;
     }
-
-
 
 }
 
@@ -893,17 +889,31 @@ footer ul li {
     }
 
 
-    .gradient-overlay img {
-        width: 86%;
-        padding: 0;
-        border-radius: 15px 15px 0 0;
+
+
+    .nossos-servicos h2 {
+        color: #ffffff;
+        justify-content: center;
+        text-align: center;
+        padding-top: 39px;
+        font-size: 42px;
     }
 
-    .btn-custom {
-        width: 86%;
+    .nossos-servicos {
+        margin-bottom: 5px;
     }
 
+    .container {
+        width: 100%;
+        padding-right: 41px;
+        padding-left: 55px;
+    }
 
+    figure {
+        margin: 0 0 2rem;
+        width: 100%;
+        height: 250px;
+    }
 
 }
 
@@ -944,21 +954,52 @@ footer ul li {
     }
 
 
+    .nossos-servicos {
+        margin-bottom: 177px;
+    }
 
+    #clinica {
+        margin-top: 123px;
+    }
+
+    .nossos-servicos h2 {
+        color: #ffffff;
+        justify-content: left;
+        text-align: center;
+        /* margin-left: 97px; */
+        padding-top: 54px;
+        font-size: 40px;
+    }
+
+    .nossos-servicos .container {
+        max-width: 900px;
+    }
+
+    .nossos-servicos .container .row {
+        min-width: 900px;
+    }
 
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
 
-.nossos-servicos .col-md-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+    footer .col-md-4 .d-flex {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
 }
 
 
+
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    #sobre-nos h2 {
+        font-size: 37px;
+    }
+}
 
 
 
