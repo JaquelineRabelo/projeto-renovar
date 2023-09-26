@@ -490,15 +490,16 @@ form {
 
 
 .agradecimento p {
-    font-size: 20px;
+    font-size: 18px;
     color: #6d434b;
 }
 
 .agradecimento p a {
-    font-size: 18px;
+    font-size: 15px;
    background-color: #8B6767;
    color: #fff;
-   border-radius: 10px;
+   border-radius: 2px;
+
 }
 
 /* Configurações Tratamento Corporal********************************/
