@@ -3,14 +3,13 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    min-height: 100vh;
     /*ocultar a barra de rolagem horizontal*/
 }
 
 
 
 /*Configuração Navbar****************************/
-
-
 nav.navbar-transparente {
     padding: 0px;
     box-shadow: 0px 5px 7px #00000021;
@@ -42,8 +41,6 @@ nav.navbar-transparente {
 }
 
 
-
-
 /*Index banner-------------------------------*/
 
 .banner {
@@ -52,8 +49,6 @@ nav.navbar-transparente {
     text-align: center;
     background-attachment: fixed;
     background-image: linear-gradient(to bottom, #f3c9d2, #fff);
-
-
 }
 
 .banner p {
@@ -125,7 +120,7 @@ nav.navbar-transparente {
     background-color: rgba(0, 0, 0, 0.137);
 }
 
-/*configuração sobre nos******************************************************/
+/*configuração sobre nos***********************************************/
 
 
 #sobre-nos .separador {
@@ -155,15 +150,12 @@ nav.navbar-transparente {
     text-align: center;
     align-items: center;
 
-
 }
 
 #sobre-nos .col-md-12 {
 
     justify-content: center center;
     margin-bottom: -45px;
-
-
 }
 
 #sobre-nos h2 {
@@ -188,7 +180,7 @@ nav.navbar-transparente {
     margin: auto;
 }
 
-/********************configuração section vantagens Index*********************/
+/***************configuração section vantagens Index*****************/
 .container-vantagens {
     display: flex;
     justify-content: center;
@@ -226,7 +218,7 @@ nav.navbar-transparente {
     color: #643d44b9
 }
 
-/******Configurações nossos servicos Index**************************************/
+/******Configurações nossos servicos Index********************************/
 .nossos-servicos {
     text-align: center;
     color: #3d252abb;
@@ -249,10 +241,7 @@ nav.navbar-transparente {
     justify-content: left;
     text-align: left;
     margin-left: 97px;
-
 }
-
-
 
 
 
@@ -262,8 +251,6 @@ nav.navbar-transparente {
     height: 55px;
     text-align: center;
     margin-bottom: -2px;
-
-
 }
 
 .gradient-overlay {
@@ -312,7 +299,6 @@ figure {
 /************************** Configuracao Section Clinica***********/
 
 
-
 #clinica {
 
     text-align: center;
@@ -327,15 +313,12 @@ figure {
     justify-content: center;
     text-align: center;
     align-items: center;
-
-
 }
 
 #clinica .col-md-12 {
 
     justify-content: center center;
     margin-bottom: -45px;
-
 
 }
 
@@ -345,8 +328,6 @@ figure {
     align-items: center;
     text-align: center;
     color: #6d434bef;
-
-
 
 }
 
@@ -387,107 +368,73 @@ figure {
 }
 
 
-/*************************************Produtos***********************************/
+/*****************************Produtos***********************************/
 
 #vendas {
     padding: 25px;
-    background-color: #c9869142;
+    background-color: #ffffff;
 }
 
-#vendas .listagem-venda {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 35px;
-    justify-content: center;
-}
-
-#vendas .cartao-venda {
-    width: 200px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    border-radius: 15px;
-    transition: 0.2s ease-in-out;
-    align-items: center;
-    text-align: center;
-}
-
-#vendas .cartao-venda .informacoes {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10px;
-
-}
-
-#vendas .cartao-venda li {
-    list-style: none;
-    align-items: center;
-
-
-}
-
-#vendas .cartao-venda .informacoes span {
-
-    text-transform: uppercase;
-    font-size: 17px;
-    align-items: center;
-    color: #492c32;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-
-
-#vendas .cartao-venda .valores {
-    display: flex;
-    gap: 15px;
-    margin-top: -15px;
-    align-items: center;
-}
-
-
-#vendas .cartao-venda .preco {
-    font-size: 20px;
+#vendas .produtos-img {
     width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
-}
-
-
-.img-vendas {
-    width: 300px;
     height: 300px;
+    border-radius: 25px;
 }
 
+.checklist-produtos {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
 
-#vendas .cartao-venda .btn-venda {
-    background-color: #643d44;
-    border-radius: 15px;
-    font-size: 15px;
-    margin-top: -30px;
-    height: 40px;
+#vendas .item .btn-produtos {
+    width: 80%;
+    align-items: center;
+    background-color: #965c68;
+    height: 44px;
+    border-radius: 8px;
     color: #fff;
+    text-transform: uppercase;
     border: none;
+    cursor: pointer;
+    margin-bottom: 14px;
+}
+
+#vendas .item .btn-produtos:hover {
+    background-color: rgb(141, 211, 36);
+    border: none;
+}
+
+
+.carrinho a {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #643d44b6;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
 
 }
 
-#vendas .cartao-venda .btn-venda:hover {
-    color: #ff0033;
-    background-color: #f0cdd454;
+
+.carrinho a:hover {
+
+    background-color: rgb(141, 211, 36);
+    color: #fff;
+    list-style: none;
 
 }
 
 
-/* Configurações de contato *****************************************************/
+/* Configurações de contato *********************************************/
 
 .contatos {
     text-align: center;
-    background-color: #c9869142;
-    color: #3d252a;
+    background-color: #c986910c;
+    color: #5e383f;
     padding: 20px;
 }
 
@@ -508,6 +455,7 @@ form {
 .social-links {
     text-align: center;
     margin-top: 20px;
+
 }
 
 .social-links a {
@@ -520,12 +468,14 @@ form {
     margin-top: 20px;
 }
 
-/* Configurações Tratamento Corporal*********************************************/
+.contatos .btn .btn-contato{
+    background: #3d252a;
+}
+
+/* Configurações Tratamento Corporal********************************/
 
 
-
-
-#tratamentos .tratamento-corporal picture {
+#tratamentos .banner-tratamento-corporal picture {
     background-attachment: fixed;
 }
 
@@ -536,17 +486,15 @@ form {
     background-color: #fff;
     padding: 5px;
     align-items: center;
-
 }
-
 
 .tratamento-corporal1 p {
     color: #925965;
 
     text-align: justify;
     justify-content: center;
-    border: 1px solid red;
     align-items: center;
+    padding: 42px;
 }
 
 #tratamentos {
@@ -575,6 +523,18 @@ form {
 
 }
 
+.tratamento-corporal2 .btn-avaliacao-corporal {
+    width: 100%;
+    border: none;
+    background-color: #6d434b36;
+    color: #6d434b;
+    cursor: pointer;
+}
+
+.tratamento-corporal2 .btn-avaliacao-corporal:hover {
+    background: #9c5e6ba2;
+    color: #fdfdfd;
+}
 
 .item {
     width: calc(33.33% - 10px);
@@ -588,8 +548,6 @@ form {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     position: relative;
     cursor: pointer;
-
-
 }
 
 
@@ -606,10 +564,6 @@ form {
     /* Mover 5 pixels para a direita e 5 pixels para baixo */
     transition: transform 0.2s ease-in-out;
     /* Adicionar uma transição suave */
-
-
-
-
 }
 
 
@@ -626,10 +580,32 @@ form {
 
 /*TRATAMENTO FACIAL*******************************************************/
 
+.tratamento-facial {
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+
+}
+
+.tratamento-facial .btn-avaliacao-corporal {
+    width: 100%;
+    border: none;
+    background-color: #6d434b36;
+    color: #6d434b;
+    cursor: pointer;
+
+
+}
+
+.tratamento-facial .btn-avaliacao-corporal:hover {
+    background: #9c5e6ba2;
+    color: #fdfdfd;
+}
 
 .checklist {
     list-style: none;
     padding: 0;
+    margin-top: 30px;
 }
 
 .checklist li::before {
@@ -637,10 +613,9 @@ form {
     /* Código Unicode para o símbolo de "certinho" */
     margin-right: 5px;
     /* Espaçamento à direita do símbolo */
-    font-weight: bold;
+    font-weight: lighter;
     /* Deixa o símbolo em negrito */
     color: #492c32;
-    /* Nova cor (#492c32) do símbolo */
 }
 
 /* Alinha a lista à esquerda */
@@ -650,13 +625,14 @@ form {
 
 
 
-/******************FOOTER********************************************************/
+/******************FOOTER***********************************************/
 
 footer {
     background: #e1cdcdbd;
     padding: 10px 0px 20px 0px;
-    position: relative;
-
+    position: absolute;
+    justify-content: center;
+    width: 100%;
 }
 
 
@@ -665,14 +641,13 @@ footer .row {
     justify-content: center;
     align-items: center;
     text-align: center;
-
-
-
 }
 
-footer .col-md-2 {
-    justify-content: end;
+footer .col-md-4 {
+    justify-content: center;
 }
+
+
 
 footer h4 {
     color: #3d252a;
@@ -688,7 +663,6 @@ footer .navbar-nav a {
 }
 
 footer .navbar-nav a:hover {
-
     color: #e998aa;
     text-decoration: none;
 }
@@ -703,7 +677,18 @@ footer ul li {
     margin: 0 5px;
 }
 
-/*Media Queries******************************************************************/
+.span-footer {
+    display: block;
+    background-color: #6d434b85;
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    height: 24px;
+}
+
+/*Media Queries************************************************************/
 
 @media(min-width: 312px) {}
 
@@ -716,7 +701,6 @@ footer ul li {
 
     .banner h1 {
         font-size: 40px;
-
     }
 
 
@@ -745,7 +729,6 @@ footer ul li {
     .item img {
         width: 100%;
         height: 230px;
-
     }
 
 
@@ -766,7 +749,6 @@ footer ul li {
         text-align: center;
         margin: auto;
         padding-top: 47px;
-
     }
 
     .nossos-servicos p {
@@ -775,7 +757,6 @@ footer ul li {
         justify-content: left;
         text-align: left;
         margin-left: 97px;
-
     }
 
     #clinica {
@@ -823,13 +804,20 @@ footer ul li {
     }
 
 
-
     #servicos {
         margin-top: -21px;
     }
 
     .container-vantagens {
         padding: 3px;
+    }
+
+    footer .container {
+        justify-content: center;
+    }
+
+    footer .row {
+        gap: 18px;
     }
 
 }
@@ -1000,22 +988,3 @@ footer ul li {
         font-size: 37px;
     }
 }
-
-
-
-
-/*customização .btn-custom (botões principais*/
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
-
-
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {}
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}

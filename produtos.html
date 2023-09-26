@@ -18,237 +18,136 @@
 </head>
 
 <body>
-  
+
   <header>
-
     <nav class="navbar navbar-expand-md navbar-transparente">
+      <div class="container">
 
-<div class="container">
+        <a href="index.html" class="navbar-brand"><img src="../projeto-afine/imagens/logo.png" width="200px">
+        </a>
 
-    <a href="index.html" class="navbar-brand"><img src="../projeto-afine/imagens/logo.png" width="200px">
-    </a>
-               
-    <!--Menu hamburguer-->        
-<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+        <!--Menu hamburguer-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+          <i class="fas fa-solid fa-bars text-dark-light"></i>
+        </button>
 
-    <i class="fas fa-solid fa-bars text-dark-light">
-    </i>
-    
-</button>
+        <div class="collapse navbar-collapse" id="nav-principal"> <!--Barra de Navegação - Listagem -->
 
-<div class="collapse navbar-collapse" id="nav-principal"> <!--Barra de Navegação - Listagem -->
+          <ul class="navbar-nav ml-auto">
 
-<ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Início</a>
+            </li>
 
-    <li class="nav-item">
-    <a href="index.html" class="nav-link">Início</a>
-    </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+              <div class="dropdown-menu">
+                <a href="tratamento-corporal.html" class="dropdown-item">Tratamento Corporal</a>
+                <a href="tratamento-facial.html" class="dropdown-item">Tratamento Facial</a>
+              </div>
+            </li>
 
-    <li class="nav-item dropdown">
-      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
-      <div class="dropdown-menu">
-        <a href="tratamento-corporal.html" class="dropdown-item">Tratamento Corporal</a>
-        <a href="tratamento-facial.html" class="dropdown-item">Tratamento Facial</a>
-      </div>
-    </li>
-  </li>
-                        
-    <li class="nav-item">
-    <a href="produtos.html" class="nav-link">Produtos</a>
-    </li>
+            <li class="nav-item">
+              <a href="produtos.html" class="nav-link">Produtos</a>
+            </li>
 
-    <li class="nav-item">
-      <a href="contatos.html" class="nav-link">Contatos</a>
-      </li>
-    <li class="nav-item divisor">   
-     </li>
+            <li class="nav-item">
+              <a href="contatos.html" class="nav-link">Contatos</a>
+            </li>
 
-
-
-
-    </div>
-
-
- </div> <!--fim container-->
-
+          </ul>
         </div>
-
-        
+      </div> <!--fim container-->
+      </div>
     </nav>
+    <!-- Carrinho de compras -->
 
-</header> <!--Fim cabeçalho-->
+    <div class="carrinho">
+
+      <a href="https://api.whatsapp.com/send/?phone=5521996086264&text&type=phone_number&app_absent=0"><span
+          style="color: rgb(255, 255, 255);" class="carrinho-icon">&#128722;</span><span class="preco-total">COMPRAR R$
+          <span id="total">0.00</span></span></a>
+
+  </header> <!--Fim cabeçalho-->
 
   <main id="vendas"> <!--Vendas-->
 
-    <!-- Carrinho de compras -->
+    <div class="container">
+
+      <div class="item">
+        <img class="produtos-img" src="../projeto-afine/imagens/drenaplus.jpeg" alt="drena-plus">
+        <h3>Drena Plus</h3>
+        <p><strong>R$99,99</strong></p>
+        <p>Potencializador de Emagrecimento e Controle de Peso</p>
+        <div> <a href="" target="_blank"><button class="btn-produtos"
+              onclick="adicionarAoCarrinho('Drena Plus', 99.99)">Adicionar ao Carrinho</button></a> </div>
+      </div>
 
 
-    <ul class="listagem-venda">
-      <li class="cartao-venda">
-        <div class="informacoes">
-          <a href="#"><span>AFINE - Drena Plus</span>
-        </div></a>
-        <a href="drena-plus.html" target="_blank"><img class="img-vendas"
-            src="../projeto-afine/imagens/drenaplus.jpeg" alt="afine"></a>
-        <ul class="valores">
-          <li class="preco"><strong>R$99,99</strong></li>
-        </ul>
+      <div class="item">
+        <img class="produtos-img" src="../projeto-afine/imagens/drenaplus.jpeg" alt="drena-plus">
+        <h3>Drena Plus</h3>
+        <p>R$99,99</p>
+        <p>Potencializador de Emagrecimento e Controle de Peso.</p>
+        <div> <button class="btn-produtos" onclick="adicionarAoCarrinho('Drena Plus', 99.99)">Adicionar ao
+            Carrinho</button> </div>
+      </div>
 
-        <p class="descricao">DrenaPlus, Potencializador de Emagrecimento e Controle de Peso.
-        </p>
-        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
-      </li>
-
-      <li class="cartao-venda">
-        <div class="informacoes">
-          <span>Produto 2</span>
-        </div>
-
-        <img src="#" alt="afine">
-        <ul class="valores">
-          <li class="preco">R$50</li>
-        </ul>
-
-        <p class="descricao">Produto ideal para o seu emagrecimento</p>
-        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
-      </li>
-
-      <li class="cartao-venda">
-        <div class="informacoes">
-          <span>Produto 3</span>
-        </div>
-
-        <img src="#" alt="afine">
-        <ul class="valores">
-          <li class="preco">R$50</li>
-        </ul>
-
-        <p class="descricao">Produto ideal para o seu emagrecimento</p>
-        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
-      </li>
-
-      <li class="cartao-venda">
-        <div class="informacoes">
-          <span>Produto 4</span>
-        </div>
-
-        <img src="#" alt="afine">
-        <ul class="valores">
-          <li class="preco">R$50</li>
-
-        </ul>
-
-        <p class="descricao">Produto ideal para o seu emagrecimento</p>
-        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
-      </li>
-
-      <li class="cartao-venda">
-        <div class="informacoes">
-          <span>Produto 5</span>
-        </div>
-
-        <img src="#" alt="afine">
-        <ul class="valores">
-          <li class="preco">R$50</li>
-
-        </ul>
-
-        <p class="descricao">Produto ideal para o seu emagrecimento</p>
-        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
-      </li>
-
-
-      <li class="cartao-venda">
-        <div class="informacoes">
-          <span>Produto 6</span>
-        </div>
-
-        <img src="#" alt="afine">
-        <ul class="valores">
-          <li class="preco">R$50</li>
-        </ul>
-
-        <p class="descricao">Produto ideal para o seu emagrecimento</p>
-        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
-      </li>
-
-      <li class="cartao-venda">
-        <div class="informacoes">
-          <span>Produto 7</span>
-        </div>
-
-        <img src="#" alt="afine">
-        <ul class="valores">
-          <li class="preco">R$50</li>
-        </ul>
-
-        <p class="descricao">Produto ideal para o seu emagrecimento
-        </p>
-        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
-      </li>
-
-      <li class="cartao-venda">
-        <div class="informacoes">
-          <span>Produto 8</span>
-        </div>
-
-        <img src="#" alt="afine">
-        <ul class="valores">
-          <li class="preco">R$50</li>
-        </ul>
-
-        <p class="descricao">Produto ideal para o seu emagrecimento
-        </p>
-        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
-      </li>
-
-      <li class="cartao-venda">
-        <div class="informacoes">
-          <span>Produto 9</span>
-        </div>
-
-        <img src="#" alt="afine">
-        <ul class="valores">
-          <li class="preco">R$50</li>
-        </ul>
-
-        <p class="descricao">Produto ideal para o seu emagrecimento
-        </p>
-        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
-      </li>
-
-      <li class="cartao-venda">
-        <div class="informacoes">
-          <span>Produto 10</span>
-        </div>
-
-        <img src="#" alt="afine">
-        <ul class="valores">
-          <li class="preco">R$50</li>
-        </ul>
-
-        <p class="descricao">Produto ideal para o seu emagrecimento
-        </p>
-        <button class="btn-venda" onclick="addToCart('Produto 1', 50.00)">Adicionar ao Carrinho</button>
-      </li>
-
-    </ul>
-
-
-
-
+      <div class="item">
+        <img class="produtos-img" src="../projeto-afine/imagens/drenaplus.jpeg" alt="drena-plus">
+        <h3>Drena Plus</h3>
+        <p>R$99,99</p>
+        <p>Potencializador de Emagrecimento e Controle de Peso.</p>
+        <div> <button class="btn-produtos" onclick="adicionarAoCarrinho('Drena Plus', 99.99)">Adicionar ao
+            Carrinho</button> </div>
+      </div>
   </main>
 
-
-
   <footer>
+    <div class="container">
+      <div class="row">
 
+        <div class="col-md-4 d-flex pr-25px">
+          <img src="../projeto-afine/imagens/logo-sem-fundo.png" width="200px" class="footer-img" alt="logo AFINE">
+        </div>
 
+        <div class="col-md-4">
+          <ul class="navbar-nav">
+            <li><a href="index.html">Ínício</a>
+            </li>
 
-    <p>&copy; 2023 Todos os direitos reservados</p>
+            <li><a href="tratamento-corporal.html">Tratamentos Corporais</a>
+            </li>
+            <li><a href="tratamento-facial.html">tratamentos faciais</a>
+            </li>
 
+            <li><a href="produtos.html">Produtos</a>
+            </li>
 
+            <li><a href="contatos.html">Contatos</a>
+            </li>
+          </ul>
+        </div>
 
+        <div class="col-md-4 d-flex">
+          <ul>
+            <li>
+              <a href="https://api.whatsapp.com/send/?phone=5521996086264&text&type=phone_number&app_absent=0"
+                target="_blank"><img src="../projeto-afine/imagens/whatt.png" width="90px" alt="icone-whatsapp"></a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/clinicaafine/" target="_blank">
+                <img src="../projeto-afine/imagens/instagram-icone.png" width="90px" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <span class="span-footer">
+      <p>&copy; 2023 Clínica AFINE</p>
+    </span>
   </footer>
 
 
