@@ -474,6 +474,33 @@ form {
     background: #3d252a;
 }
 
+
+/*pagina agradecimento contato********************************/
+.agradecimento {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    height: 100%;
+
+}
+
+
+
+.agradecimento p {
+    font-size: 20px;
+    color: #6d434b;
+}
+
+.agradecimento p a {
+    font-size: 18px;
+   background-color: #8B6767;
+   color: #fff;
+   border-radius: 10px;
+}
+
 /* Configurações Tratamento Corporal********************************/
 
 

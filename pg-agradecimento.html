@@ -59,63 +59,19 @@
 
 
     <main> <!-- Inicio Contatos-->
-        <section class="contatos">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6" class="contatos-1">
-                        <!-- Formulário de contato -->
-                        <h2>Dúvidas? Entre em contato conosco!</h2>
-                        <form action="https://formsubmit.co/jaqueline.raabelo@hotmail.com" method="POST">
-                            <div class="form-group">
-                                <label for="nome">Nome:</label>
-                                <input type="text" id="nome" name="nome" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="mensagem">Mensagem:</label>
-                                <textarea id="mensagem" name="mensagem" class="form-control" rows="5"
-                                required placeholder="Digite sua mensagem"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-light" class="btn-contato">Enviar mensagem</button>
-                        </form>
-                        <input type="hidden" name="_next" value="https://seudominio.co/thanks.html">
 
-                    </div>
-                    <div class="col-md-6">
-                        <!-- Informações de contato -->
-                        <h2>Informações de Contato</h2>
-                        <div class="contact-info">
-                            <p><strong>Endereço:</strong> R. Luís Sobral, 1255 - apt 201 - Rancho Novo</p>
-                            <p><strong>Horário de Funcionamento:</strong> Segunda a Sexta, 9h às 18h</p>
-                            <p><strong>Telefones:</strong> (21) 99608-6264</p>
-                        </div>
-
-                        <form action="processar_contato.php" method="post">
-                            <!-- Resto do formulário aqui -->
-                        </form>
-
-
-                        <!-- Link para o WhatsApp -->
-                        <p><a href="https://api.whatsapp.com/send/?phone=5521996086264&text&type=phone_number&app_absent=0"
-                                target="_blank">Entre em contato pelo
-                                WhatsApp</a></p>
-
-                        <!-- Links das redes sociais -->
-                        <div class="social-links">
-                            <a href="https://www.instagram.com/clinicaafine/" target="_blank">Instagram</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mapa -->
-                <div
-                    id="https://www.google.com/maps/place/R.+Lu%C3%ADs+Sobral,+1255+-+apt+201+-+Rancho+Novo,+Nova+Igua%C3%A7u+-+RJ,+26013-736,+Brasil/data=!4m2!3m1!1s0x99664e9d22646f:0x8d77a2020464ad14?sa=X&ved=2ahUKEwiL37j1-p2BAxUZcKQEHQj7AZQQ8gF6BAgPEAA&ved=2ahUKEwiL37j1-p2BAxUZcKQEHQj7AZQQ8gF6BAgQEAI">
-                </div>
-            </div>
-        </section> <!--Fim section contatos-->
+        <section class="banner-tratamento-corporal"> <!-- fim Tratamento Corporal-->
+            <picture>
+              <source media="(max-width: 900px)" srcset="../projeto-afine/imagens/agradecimento-pq.png">
+              <img src="../projeto-afine/imagens/banner-agradecimento.png" class="img-fluid" alt="1" width="100%">
+            </picture>
+      
+          </section>
+        <div class="agradecimento">
+            
+            <p>Sua mensagem foi enviada com sucesso. Entraremos em contato em breve.</p>
+            <p><a href="index.html">Voltar à página inicial</a></p>
+        </div>
     </main>
 
     <footer>
