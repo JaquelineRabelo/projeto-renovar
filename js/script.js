@@ -10,14 +10,31 @@ menuToggle.addEventListener('click', () => {
 
 
 /*adicionar ao carrinho*/
-const carrinhoLista = document.getElementById('carrinho-lista');
-const totalSpan = document.getElementById('total');
-let total = 0;
+// Definir uma variável para armazenar o total do carrinho
+function calcularTotalCarrinho() {
 
-function adicionarAoCarrinho(nome, preco) {
-    const listItem = document.createElement('li');
-    listItem.textContent = `${nome} - R$${preco.toFixed(2)}`;
-    carrinhoLista.appendChild(listItem);
-    total += preco;
-    totalSpan.textContent = `R$${total.toFixed(2)}`;
-}
+    function calcularTotalCarrinho() {
+
+        // Definir uma variável para armazenar o total do carrinho
+        let total = 0;
+      
+        // Obter todos os produtos no carrinho
+        let produtos = $(".item");
+      
+        // Iterar sobre todos os produtos
+        produtos.each(function() {
+      
+          // Obter o valor do produto
+          let valor = $(this).find(".valor").text();
+      
+          // Adicionar o valor do produto ao total
+          total += parseFloat(valor);
+        });
+      
+        // Atualizar o valor do total no ícone do carrinho
+        $("#icone-carrinho").text(total);
+      }
+      
+      $(".adicionar-ao-carrinho").click(calcularTotalCarrinho);
+      }
+  
