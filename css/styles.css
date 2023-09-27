@@ -375,10 +375,15 @@ figure {
 #vendas {
     padding: 25px;
     background-color: #ffffff;
+    margin-top: 20px;
+}
+
+#vendas .container {
+    margin-top: 40px;
 }
 
 #vendas .produtos-img {
-    width: 100%;
+    width: 80%;
     height: 300px;
     border-radius: 25px;
 }
