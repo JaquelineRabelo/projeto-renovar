@@ -445,13 +445,11 @@ figure {
     display: flex; /* Use um flex container */
     justify-content: end; /* Centraliza horizontalmente */
     align-items: end; /* Centraliza verticalmente */
-    height: 19vh; /* Ajuste a altura conforme necessário */
+   /* Ajuste a altura conforme necessário */
 }
 
 
 #carrinho {
-    top: 100px;
-    right: 2px;
     background-color: #ffffff;
     border: 1px solid #ccc;
     padding: 10px;
@@ -461,7 +459,7 @@ figure {
     text-align: center;
     justify-content: center;
     align-items: center;
-    display: relative;
+    position: relative;
 }
 
 
@@ -922,23 +920,21 @@ footer ul li {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 14vh;
     }
 
     #carrinho {
-        top: 100px;
-        right: 2px;
+        top: 14px;
+        /* right: 2px; */
         background-color: #ffffff;
         border: 1px solid #ccc;
         padding: 10px;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         z-index: 1;
-        width: 78%;
+        width: 86%;
         text-align: center;
         justify-content: center;
         align-items: center;
-        display: relative;
-    }
+        position: relative;
 
 }
 
@@ -1034,23 +1030,23 @@ footer ul li {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 14vh;
     }
 
     #carrinho {
-        top: 100px;
-        right: 2px;
+        top: 14px;
+        /* right: 2px; */
         background-color: #ffffff;
         border: 1px solid #ccc;
         padding: 10px;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         z-index: 1;
-        width: 78%;
+        width: 86%;
         text-align: center;
         justify-content: center;
         align-items: center;
-        display: relative;
-    }
+        position: relative;
+
+}
 
 
 }
@@ -1127,6 +1123,19 @@ footer ul li {
         min-width: 900px;
     }
 
+    #carrinho {
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        width: 38%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1136,6 +1145,20 @@ footer ul li {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    #carrinho {
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        width: 35%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
 
 }
 
