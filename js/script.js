@@ -10,31 +10,21 @@ menuToggle.addEventListener('click', () => {
 
 
 /*adicionar ao carrinho*/
-// Definir uma variável para armazenar o total do carrinho
-function calcularTotalCarrinho() {
+const botoesCarrinho = document.querySelectorAll('.adicionar-ao-carrinho');
+const totalElement = document.getElementById('total');
+const itensCarrinhoElement = document.getElementById('itens-carrinho');
+let total = 0;
 
-    function calcularTotalCarrinho() {
+botoesCarrinho.forEach(botao => {
+    botao.addEventListener('click', () => {
+        const preco = parseFloat(botao.getAttribute('data-preco'));
+        total += preco;
 
-        // Definir uma variável para armazenar o total do carrinho
-        let total = 0;
-      
-        // Obter todos os produtos no carrinho
-        let produtos = $(".item");
-      
-        // Iterar sobre todos os produtos
-        produtos.each(function() {
-      
-          // Obter o valor do produto
-          let valor = $(this).find(".valor").text();
-      
-          // Adicionar o valor do produto ao total
-          total += parseFloat(valor);
-        });
-      
-        // Atualizar o valor do total no ícone do carrinho
-        $("#icone-carrinho").text(total);
-      }
-      
-      $(".adicionar-ao-carrinho").click(calcularTotalCarrinho);
-      }
-  
+        const itemCarrinho = document.createElement('li');
+        itemCarrinho.textContent = `${botao.parentElement.querySelector('h3').textContent} - R$ ${preco.toFixed(2)}`;
+        itensCarrinhoElement.appendChild(itemCarrinho);
+
+        totalElement.textContent = total.toFixed(2);
+    });
+});
+

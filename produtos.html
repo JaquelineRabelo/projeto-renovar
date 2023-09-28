@@ -60,21 +60,14 @@
       </div> <!--fim container-->
       </div>
     </nav>
-    <!-- Carrinho de compras -->
 
-    <div class="carrinho">
-
-      <a href="https://api.whatsapp.com/send/?phone=5521996086264&text&type=phone_number&app_absent=0"><span
-          style="color: rgb(255, 255, 255);" class="carrinho-icon">&#128722;</span><span class="preco-total">COMPRAR R$
-          <span id="total">0.00</span></span></a>
-              </div>
 
   </header> <!--Fim cabeçalho-->
 
   <main id="vendas"> <!--Vendas-->
 
     <section class="banner-produtos"> <!-- Inicio Banner-->
-      
+
       <picture>
         <source media="(max-width: 900px)" srcset="../projeto-afine/imagens/produtos/banner-produtos-pq.png">
         <img src="../projeto-afine/imagens/produtos/banner-produtos2.png" class="img-fluid" alt="1" width="100%">
@@ -89,7 +82,7 @@
         <h3>Redux Cell</h3>
         <p>R$99,99</p>
         <p>Reduz a celulite.</p>
-        <div> <button class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Drena Plus', 99.99)">Adicionar ao Carrinho</button> </div>
+        <button class="adicionar-ao-carrinho" data-preco="99.99">Adicionar ao Carrinho</button>
       </div>
 
       <div class="item-venda">
@@ -97,30 +90,43 @@
         <h3>Iniby Doce</h3>
         <p>R$99,99</p>
         <p>Inibi a saciedade por doces</p>
-        <div> <button class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Drena Plus', 99.99)">Adicionar ao Carrinho</button> </div>
-        </div>
+        <button class="adicionar-ao-carrinho" data-preco="99.99">Adicionar ao Carrinho</button>
+      </div>
 
-        <div class="item-venda">
-          <img class="produtos-img" src="../projeto-afine/imagens/produtos/3.png" alt="Power Plus">
-          <h3>Power Plus</h3>
-          <p>R$99,99</p>
-          <p>Potencializador de Emagrecimento</p>
-          <div> <button class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Drena Plus', 99.99)">Adicionar ao Carrinho</button> </div>
-          </div>
+      <div class="item-venda">
+        <img class="produtos-img" src="../projeto-afine/imagens/produtos/3.png" alt="Power Plus">
+        <h3>Power Plus</h3>
+        <p>R$99,99</p>
+        <p>Potencializador de Emagrecimento</p>
+        <button class="adicionar-ao-carrinho" data-preco="99.99">Adicionar ao Carrinho</button>
+      </div>
 
-          <div class="item-venda">
-            <img class="produtos-img" src="../projeto-afine/imagens/produtos/4.png" alt="Drenagem e Antioxidante">
-            <h3>Drenagem e Antioxidante</h3>
-            <p>R$99,99</p>
-            <p>Restaure a saúde da pele</p>
-            <div> <button class="adicionar-ao-carrinho" onclick="adicionarAoCarrinho('Drena Plus', 99.99)">Adicionar ao Carrinho</button> </div>
-            </div>
+      <div class="item-venda">
+        <img class="produtos-img" src="../projeto-afine/imagens/produtos/4.png" alt="Drenagem e Antioxidante">
+        <h3>Drenagem e Antioxidante</h3>
+        <p>R$99,99</p>
+        <p>Restaure a saúde da pele</p>
+        <button class="adicionar-ao-carrinho" data-preco="99.99">Adicionar ao Carrinho</button>
+      </div>
 
-           
 
-            </div> <!--Fim container vendas-->
+    </div> <!--Fim container vendas-->
+
+    <!-- Carrinho de compras -->
+
+    <section id="resumo">
+      <div id="carrinho">
+        <p> <span style="color: black;">&#128722</span>  RESUMO DO PEDIDO: R$ <span id="total">0.00</span></p>
+        <ul id="itens-carrinho">
+        </ul>
+        <a href="https://api.whatsapp.com/send/?phone=5521996086264&text&type=phone_number&app_absent=0"
+          target="_blank"><button class="comprar">Finalizar Compra</button></a>
+      </div>
+    </section>
+
   </main>
 
+  
   <footer>
     <div class="container">
       <div class="row">
@@ -182,7 +188,52 @@
     crossorigin="anonymous"></script>
 
 
-  <script src="../projeto-afine/js/script.js"> </script>
+  <script>
+    const botoesCarrinho = document.querySelectorAll('.adicionar-ao-carrinho');
+    const carrinhoElement = document.getElementById('carrinho-icon');
+    const mostrarCarrinhoButton = document.getElementById('mostrar-carrinho');
+    const totalElement = document.getElementById('total');
+    const itensCarrinhoElement = document.getElementById('itens-carrinho');
+    let total = 0;
+
+    // Função para remover um item do carrinho
+    function removerItemDoCarrinho(itemElement, preco) {
+      total -= preco;
+      totalElement.textContent = total.toFixed(2);
+      itemElement.remove();
+    }
+
+    botoesCarrinho.forEach(botao => {
+      botao.addEventListener('click', () => {
+        const preco = parseFloat(botao.getAttribute('data-preco'));
+        total += preco;
+
+        const itemCarrinho = document.createElement('li');
+        itemCarrinho.textContent = `${botao.parentElement.querySelector('h3').textContent} - R$ ${preco.toFixed(2)}`;
+
+        const botaoRemover = document.createElement('button');
+        botaoRemover.textContent = 'X';
+        botaoRemover.addEventListener('click', () => {
+          removerItemDoCarrinho(itemCarrinho, preco);
+        });
+
+        itemCarrinho.appendChild(botaoRemover);
+        itensCarrinhoElement.appendChild(itemCarrinho);
+
+        totalElement.textContent = total.toFixed(2);
+
+        // Exibir o carrinho quando um item for adicionado
+        carrinhoElement.style.display = 'block';
+      });
+    });
+
+    mostrarCarrinhoButton.addEventListener('click', () => {
+      // Exibir o carrinho quando o botão "Mostrar Carrinho" for clicado
+      carrinhoElement.style.display = 'block';
+    }); </script>
+
+
+
 
 </body>
 

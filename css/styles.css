@@ -408,6 +408,7 @@ figure {
 
 #vendas .container {
     margin-top: 40px;
+    position: relative;
 }
 
 #vendas .produtos-img {
@@ -440,29 +441,49 @@ figure {
     border: none;
 }
 
-
-.carrinho a {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background-color: #643d44b6;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 1;
-
+#resumo {
+    display: flex; /* Use um flex container */
+    justify-content: end; /* Centraliza horizontalmente */
+    align-items: end; /* Centraliza verticalmente */
+    height: 19vh; /* Ajuste a altura conforme necessário */
 }
 
 
-.carrinho a:hover {
+#carrinho {
+    top: 100px;
+    right: 2px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: relative;
+}
 
+
+#carrinho p{
+    border: none;
     background-color: rgb(141, 211, 36);
     color: #fff;
-    list-style: none;
-
+    cursor: pointer;
+    margin-top: -9px;
 }
 
+
+#carrinho ul{
+    list-style: none;
+}
+ #carrinho .comprar{
+    width: 100%;
+    border: none;
+    background-color: #8e011bbe;
+    color: #fff;
+    cursor: pointer;
+ }
 
 /* Configurações de contato *********************************************/
 
@@ -897,6 +918,28 @@ footer ul li {
         gap: 18px;
     }
 
+    #resumo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 14vh;
+    }
+
+    #carrinho {
+        top: 100px;
+        right: 2px;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        width: 78%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: relative;
+    }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -986,6 +1029,29 @@ footer ul li {
         width: 100%;
         height: 250px;
     }
+
+    #resumo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 14vh;
+    }
+
+    #carrinho {
+        top: 100px;
+        right: 2px;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        width: 78%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: relative;
+    }
+
 
 }
 
