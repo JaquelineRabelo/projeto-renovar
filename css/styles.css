@@ -424,7 +424,7 @@ figure {
 }
 
 #vendas .item-venda .adicionar-ao-carrinho {
-    width:80%;
+    width: 80%;
     align-items: center;
     background-color: #965c68;
     height: 44px;
@@ -442,10 +442,13 @@ figure {
 }
 
 #resumo {
-    display: flex; /* Use um flex container */
-    justify-content: end; /* Centraliza horizontalmente */
-    align-items: end; /* Centraliza verticalmente */
-   /* Ajuste a altura conforme necessário */
+    display: flex;
+    /* Use um flex container */
+    justify-content: end;
+    /* Centraliza horizontalmente */
+    align-items: end;
+    /* Centraliza verticalmente */
+    /* Ajuste a altura conforme necessário */
 }
 
 
@@ -463,7 +466,7 @@ figure {
 }
 
 
-#carrinho p{
+#carrinho p {
     border: none;
     background-color: rgb(141, 211, 36);
     color: #fff;
@@ -472,16 +475,17 @@ figure {
 }
 
 
-#carrinho ul{
+#carrinho ul {
     list-style: none;
 }
- #carrinho .comprar{
+
+#carrinho .comprar {
     width: 100%;
     border: none;
     background-color: #8e011bbe;
     color: #fff;
     cursor: pointer;
- }
+}
 
 /* Configurações de contato *********************************************/
 
@@ -936,238 +940,240 @@ footer ul li {
         align-items: center;
         position: relative;
 
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px)
-/* Medium devices (tablets, 768px and up)*/
-    {
-
-    .d-flex .tipos {
-        width: 100%
-    }
-
-    .banner h1 {
-        font-size: 41px;
-    }
-
-    .item img {
-        width: 100%;
-        height: 210px;
-
-    }
-
-    .item-venda {
-        width: 48%;
-    }
-
-    .item-venda img {
-        width: 100%;
-        height: 210px;
-
-    }
-
-    .item {
-        width: 48%;
-    }
-
-    .itens-vantagens {
-        margin-top: 51px;
-    }
-
-    #clinica {
-        height: 400px;
-        margin-top: 964px;
-    }
-
-
-
-    .gradient-overlay {
-        position: relative;
-        margin-top: 50px;
-    }
-
-
-    #sobre-nos .text-nos {
-        padding: 34px;
-        margin-top: 30px;
-    }
-
-    #sobre-nos h2 {
-        margin-top: 43px;
-    }
-
-    .nossos-servicos .col-md-4 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    .nossos-servicos h2 {
-        color: #ffffff;
-        justify-content: center;
-        text-align: center;
-        padding-top: 39px;
-        font-size: 42px;
-    }
-
-    .nossos-servicos {
-        margin-bottom: 5px;
-    }
-
-    .container {
-        width: 100%;
-        padding-right: 41px;
-        padding-left: 55px;
-    }
-
-    figure {
-        margin: 0 0 2rem;
-        width: 100%;
-        height: 250px;
-    }
-
-    #resumo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #carrinho {
-        top: 14px;
-        /* right: 2px; */
-        background-color: #ffffff;
-        border: 1px solid #ccc;
-        padding: 10px;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        width: 86%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
-}
-
-
-}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .item {
-        width: 48%;
-    }
-
-    .item img {
-        width: 100%;
-        height: 220px;
-
-    }
-
-    .item-venda {
-        width: 48%;
-    }
-
-    .item-venda img {
-        width: 100%;
-        height: 220px;
-
-    }
-
-    figure {
-        /* margin: auto 1rem; */
-        height: 170px;
-
-    }
-
-    #sobre-nos .text-nos {
-        padding: 34px;
-        margin-top: 30px;
-    }
-
-    #sobre-nos h2 {
-        margin-top: 43px;
-    }
-
-    .itens-vantagens {
-        margin-top: 51px;
-    }
-
-    .nossos-servicos .col-md-4 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-
-    .nossos-servicos {
-        margin-bottom: 177px;
-    }
-
-    #clinica {
-        margin-top: 123px;
-    }
-
-    .nossos-servicos h2 {
-        color: #ffffff;
-        justify-content: left;
-        text-align: center;
-        /* margin-left: 97px; */
-        padding-top: 54px;
-        font-size: 40px;
-    }
-
-    .nossos-servicos .container {
-        max-width: 900px;
-    }
-
-    .nossos-servicos .container .row {
-        min-width: 900px;
-    }
-
-    #carrinho {
-        background-color: #ffffff;
-        border: 1px solid #ccc;
-        padding: 10px;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        width: 38%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
-    footer .col-md-4 .d-flex {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    #carrinho {
-        background-color: #ffffff;
-        border: 1px solid #ccc;
-        padding: 10px;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        width: 35%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
-
-}
-
-
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-
-    #sobre-nos h2 {
-        font-size: 37px;
     }
 }
+
+    /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) and (max-width: 767.98px)
+
+    /* Medium devices (tablets, 768px and up)*/
+        {
+
+        .d-flex .tipos {
+            width: 100%
+        }
+
+        .banner h1 {
+            font-size: 41px;
+        }
+
+        .item img {
+            width: 100%;
+            height: 210px;
+
+        }
+
+        .item-venda {
+            width: 48%;
+        }
+
+        .item-venda img {
+            width: 100%;
+            height: 210px;
+
+        }
+
+        .item {
+            width: 48%;
+        }
+
+        .itens-vantagens {
+            margin-top: 51px;
+        }
+
+        #clinica {
+            height: 400px;
+            margin-top: 964px;
+        }
+
+
+
+        .gradient-overlay {
+            position: relative;
+            margin-top: 50px;
+        }
+
+
+        #sobre-nos .text-nos {
+            padding: 34px;
+            margin-top: 30px;
+        }
+
+        #sobre-nos h2 {
+            margin-top: 43px;
+        }
+
+        .nossos-servicos .col-md-4 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .nossos-servicos h2 {
+            color: #ffffff;
+            justify-content: center;
+            text-align: center;
+            padding-top: 39px;
+            font-size: 42px;
+        }
+
+        .nossos-servicos {
+            margin-bottom: 5px;
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 41px;
+            padding-left: 55px;
+        }
+
+        figure {
+            margin: 0 0 2rem;
+            width: 100%;
+            height: 250px;
+        }
+
+        #resumo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #carrinho {
+            top: 14px;
+            /* right: 2px; */
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 86%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+        }
+
+
+    }
+
+    /* Medium devices (tablets, 768px and up)*/
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .item {
+            width: 48%;
+        }
+
+        .item img {
+            width: 100%;
+            height: 220px;
+
+        }
+
+        .item-venda {
+            width: 48%;
+        }
+
+        .item-venda img {
+            width: 100%;
+            height: 220px;
+
+        }
+
+        figure {
+            /* margin: auto 1rem; */
+            height: 170px;
+
+        }
+
+        #sobre-nos .text-nos {
+            padding: 34px;
+            margin-top: 30px;
+        }
+
+        #sobre-nos h2 {
+            margin-top: 43px;
+        }
+
+        .itens-vantagens {
+            margin-top: 51px;
+        }
+
+        .nossos-servicos .col-md-4 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+
+        .nossos-servicos {
+            margin-bottom: 177px;
+        }
+
+        #clinica {
+            margin-top: 123px;
+        }
+
+        .nossos-servicos h2 {
+            color: #ffffff;
+            justify-content: left;
+            text-align: center;
+            /* margin-left: 97px; */
+            padding-top: 54px;
+            font-size: 40px;
+        }
+
+        .nossos-servicos .container {
+            max-width: 900px;
+        }
+
+        .nossos-servicos .container .row {
+            min-width: 900px;
+        }
+
+        #carrinho {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 38%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+    }
+
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+
+        footer .col-md-4 .d-flex {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        #carrinho {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 35%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+
+    }
+
+
+
+    /* Extra large devices (large desktops, 1200px and up)*/
+    @media (min-width: 1200px) {
+
+        #sobre-nos h2 {
+            font-size: 37px;
+        }
+    }
