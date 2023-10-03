@@ -122,6 +122,15 @@ nav.navbar-transparente {
     background-color: rgba(0, 0, 0, 0.137);
 }
 
+
+/*localização**************************/
+
+
+#localizacao a {
+    color: #5e383f;
+    
+}
+
 /*configuração sobre nos***********************************************/
 
 
@@ -637,9 +646,6 @@ form {
     position: relative;
     cursor: pointer;
 }
-
-
-
 .item img {
     width: 100%;
     height: 250px;
@@ -1052,6 +1058,10 @@ footer ul li {
             align-items: center;
             position: relative;
 
+        }
+
+        .item-venda .text-venda{
+            font-weight: bolder;
         }
 
 
