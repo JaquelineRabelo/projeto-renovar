@@ -138,7 +138,6 @@ nav.navbar-transparente {
     color: #dd677c;
     margin: 5px;
     padding-left: 5px;
-
 }
 
 /*configuração sobre nos***********************************************/
@@ -404,6 +403,18 @@ figure {
     cursor: pointer;
 }
 
+.container .item-venda-cinta h3 {
+    color: #8B6767;
+}
+
+.container .item-venda h3 {
+    color: #8B6767;
+}
+
+
+
+
+
 .item-venda img {
     width: 80%;
     height: 250px;
@@ -524,6 +535,8 @@ figure {
     cursor: pointer;
     margin-right: 20px;
 }
+
+
 
 
 #carrinho {
@@ -928,11 +941,9 @@ footer ul li {
         height: 230px;
     }
 
-    .container .item-venda h3 {
-        color: #8E011A;
-    }
+   
 
-    .container .item-venda .text-venda {
+    .container .item-venda-cinta h3 {
         color: #8E011A;
     }
 
