@@ -29,8 +29,10 @@ nav.navbar-transparente {
 }
 
 .navbar-toggler {
-    color: #3d252a;
+    color: #613a42;
     border-color: rgba (255, 255, 255, 0.5);
+    font-size: 2rem;
+    border: 1px solid #cf959f;
     /*usado para definir a bordar do menu hamburguer*/
 }
 
@@ -55,9 +57,6 @@ nav.navbar-transparente {
     font-size: 16px;
     margin: 10px 0;
 }
-
-
-
 
 .btn-custom {
     color: #492c32;
@@ -123,7 +122,7 @@ nav.navbar-transparente {
 }
 
 
-/*localização**************************/
+/*localização************************************************************/
 
 
 #localizacao a {
@@ -142,7 +141,6 @@ nav.navbar-transparente {
 
 /*configuração sobre nos***********************************************/
 
-
 #sobre-nos .separador {
     padding: 0;
     width: 50px !important;
@@ -158,9 +156,6 @@ nav.navbar-transparente {
 
     text-align: center;
     height: 500px;
-
-
-
 }
 
 #sobre-nos .row {
@@ -288,7 +283,7 @@ nav.navbar-transparente {
     background: #94596586;
     /* Gradiente de exemplo - personalize as cores aqui */
     opacity: 0;
-    /* Você pode ajustar a opacidade conforme necessário */
+    /* ajustar a opacidade conforme necessário */
 
 }
 
@@ -306,17 +301,17 @@ figure {
 
 .tipos .gradient-overlay #imagem-animada {
     transition: transform 0.2s ease;
-    /* Adicione uma transição suave para o movimento */
+    /* Adicionar uma transição suave para o movimento */
 }
 
 .tipos .gradient-overlay #imagem-animada:hover {
     transform: scale(1.05);
-    /* Aumenta a imagem em 5% quando o cursor estiver sobre ela */
+    /* Aumentar a imagem em 5% quando o cursor estiver sobre ela */
     cursor: pointer;
-    /* Altera o cursor para indicar que a imagem é clicável */
+    /* Alterar o cursor para indicar que a imagem é clicável */
 }
 
-/************************** Configuracao Section Clinica***********/
+/************************** Configuracao Section Clínica***********/
 
 
 #clinica {
@@ -391,7 +386,7 @@ figure {
 /*****************************Produtos***********************************/
 .item-venda {
     width: calc(33.33% - 15px);
-    /* Calcula 1/3 da largura da tela, com uma margem de 20px entre as colunas */
+    /* Calcular 1/3 da largura da tela, com uma margem de 20px entre as colunas */
     margin-bottom: 10px;
     /* Espaçamento entre as linhas */
     box-sizing: border-box;
@@ -410,10 +405,6 @@ figure {
 .container .item-venda h3 {
     color: #8B6767;
 }
-
-
-
-
 
 .item-venda img {
     width: 80%;
@@ -537,8 +528,6 @@ figure {
 }
 
 
-
-
 #carrinho {
     background-color: #ffffff;
     border: 1px solid #ccc;
@@ -574,15 +563,6 @@ figure {
     cursor: pointer;
 }
 
-.last-row {
-    display: flex;
-    justify-content: space-between;
-    /* Isso garante que haja espaço igual entre as duas últimas divs */
-    margin-bottom: 10px;
-    width: 100%;
-    /* Largura total do container para ocupar todo o espaço disponível */
-}
-
 
 /* Configurações de contato *********************************************/
 
@@ -593,7 +573,7 @@ figure {
     padding: 20px;
 }
 
-/* Estilo para o mapa, ajuste conforme necessário */
+/* Estilo para o mapa */
 #map {
     width: 100%;
     height: 400px;
@@ -630,7 +610,7 @@ form {
 }
 
 
-/*pagina agradecimento contato********************************/
+/*pagina de agradecimento********************************/
 .agradecimento {
     max-width: 600px;
     margin: 0 auto;
@@ -641,7 +621,6 @@ form {
     height: 100%;
 
 }
-
 
 
 .agradecimento p {
@@ -693,7 +672,7 @@ form {
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1200px;
-    /* Defina a largura máxima desejada */
+    /* Definir a largura máxima desejada */
     position: relative;
 }
 
@@ -723,7 +702,7 @@ form {
 
 .item {
     width: calc(33.33% - 10px);
-    /* Calcula 1/3 da largura da tela, com uma margem de 20px entre as colunas */
+    /* Calcular 1/3 da largura da tela, com uma margem de 20px entre as colunas */
     margin-bottom: 10px;
     /* Espaçamento entre as linhas */
     box-sizing: border-box;
@@ -751,14 +730,10 @@ form {
 }
 
 
-
-
 .servicos {
     background-image: url(../imagens/banner-servicos.png);
     height: 385px;
 }
-
-
 
 
 
@@ -768,7 +743,6 @@ form {
     overflow: hidden;
     position: relative;
     margin-top: 30px;
-
 }
 
 .tratamento-facial .btn-avaliacao-corporal {
@@ -777,8 +751,6 @@ form {
     background-color: #6d434b36;
     color: #6d434b;
     cursor: pointer;
-
-
 }
 
 .tratamento-facial .btn-avaliacao-corporal:hover {
@@ -798,7 +770,6 @@ form {
     margin-right: 5px;
     /* Espaçamento à direita do símbolo */
     font-weight: lighter;
-    /* Deixa o símbolo em negrito */
     color: #492c32;
 }
 
@@ -872,7 +843,7 @@ footer ul li {
     height: 24px;
 }
 
-/*Media Queries************************************************************/
+/*Media Queries**********************************************************/
 
 @media(min-width: 312px) {}
 
@@ -1301,10 +1272,7 @@ footer ul li {
         align-items: center;
         position: relative;
     }
-
-
 }
-
 
 
 /* Extra large devices (large desktops, 1200px and up)*/
