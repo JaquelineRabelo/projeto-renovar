@@ -1,7 +1,7 @@
 # projeto-afine
 Site em construção
 
-<a https://jaquelinerabelo.github.io/projeto-afine/index.html">AFINE</a>
+<a href:"https://jaquelinerabelo.github.io/projeto-afine/index.html">AFINE</a>
 
 
 
