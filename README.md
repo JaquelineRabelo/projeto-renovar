@@ -20,7 +20,7 @@ Referência de Documentação:
  
 Conteúdo do Site:
 
-Este é um site institucional dedicado à Clínica de Estética AFINE, onde os visitantes poderão aprender mais sobre os serviços e produtos fornecidos.
+Este é um site institucional dedicado à Clínica de Estética RENOVAR, onde os visitantes poderão aprender mais sobre os serviços e produtos fornecidos.
 Além disso, o site contém uma mini loja virtual para conveniência dos clientes. Os pedidos feitos serão finalizados através do WhatsApp, garantindo uma experiência de compra simplificada.
 
 Recursos de JavaScript:
