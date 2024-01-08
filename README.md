@@ -3,7 +3,7 @@ Site em construção
 <a href="https://jaquelinerabelo.github.io/projeto-afine/">RENOVAR</a>
 
 
-Descrição do Site da Clínica de Estética AFINE em Construção
+Descrição do Site da Clínica de Estética renovar em Construção
 
 Projeto de website em construção para a Clínica de Estética RENOVAR!  Este site está sendo desenvolvido com o objetivo de fornecer aos  uma experiência informativa e interativa. Abaixo estão os principais componentes e tecnologias utilizadas na criação deste site:
 
