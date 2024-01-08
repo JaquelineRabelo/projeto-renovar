@@ -1,6 +1,6 @@
 # projeto-renovar
 Site em construção
-<a href="https://jaquelinerabelo.github.io/projeto-afine/">RENOVAR</a>
+<a href="https://jaquelinerabelo.github.io/projeto-renovar/">RENOVAR</a>
 
 
 Descrição do Site da Clínica de Estética renovar em Construção
